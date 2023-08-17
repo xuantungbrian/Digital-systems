@@ -1,0 +1,30 @@
+module Clk_divider (	input logic inclk, Reset,
+						input logic [31:0] div_clk_count, 
+						output logic outclk, outclk_Not);
+	logic [31:0] counter;
+	logic rst;
+	
+	Counter COUNTER (.clk(inclk), .rst(rst), .counter(counter));
+	
+	always_ff @(posedge inclk)
+		if (div_clk_count == 1)
+			outclk <= ~outclk;
+		else
+			if (counter >= div_clk_count-32'b1) 
+				begin
+					rst <= 1'b1;
+					outclk <= ~outclk;
+				end
+			else 
+				rst <= 1'b0;
+			
+endmodule
+
+
+module Counter (input logic clk, rst, output logic [31:0] counter);
+	always_ff @(posedge clk)
+		if (rst) 
+				counter <= 32'b1;
+		else
+			counter <= counter + 32'b1;
+endmodule

@@ -1,0 +1,35 @@
+module LED_light (input logic direction, input logic [7:0] LED
+	logic direction;
+	logic [7:0] NLED;
+
+
+
+	always_ff @(posedge Clock_1Hz)
+		begin
+			LED <= NLED;	
+			if (({direction, LED} == {1'd0, 8'd64}) || ({direction, LED} == {1'd1, 8'd2}))
+					direction <= ~direction; 
+		end
+
+	always_comb
+		begin
+			case ({direction, LED})
+				{1'd0, 8'd0}: NLED[7:0] = 8'd1;
+				{1'd0, 8'd1}: NLED[7:0] = 8'd2;
+				{1'd0, 8'd2}: NLED[7:0] = 8'd4;
+				{1'd0, 8'd4}: NLED[7:0] = 8'd8;
+				{1'd0, 8'd8}: NLED[7:0] = 8'd16;
+				{1'd0, 8'd16}: NLED[7:0] = 8'd32;
+				{1'd0, 8'd32}: NLED[7:0] = 8'd64;
+				{1'd0, 8'd64}: NLED[7:0] = 8'd128;
+				{1'd1, 8'd128}: NLED[7:0] = 8'd64;
+				{1'd1, 8'd64}: NLED[7:0] = 8'd32;
+				{1'd1, 8'd32}: NLED[7:0] = 8'd16;
+				{1'd1, 8'd16}: NLED[7:0] = 8'd8;
+				{1'd1, 8'd8}: NLED[7:0] = 8'd4;
+				{1'd1, 8'd4}: NLED[7:0] = 8'd2;
+				{1'd1, 8'd2}: NLED[7:0] = 8'd1;		
+				default: NLED[7:0] = 8'dx;
+			endcase
+		end
+endmodule
