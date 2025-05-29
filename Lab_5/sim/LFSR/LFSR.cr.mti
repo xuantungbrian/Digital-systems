@@ -1,0 +1,15 @@
+E:/CPEN311/311Labs/tim_yang_53414207_xuan_tung_luu_30236798_Lab_5/rtl/LFSR.sv {1 {vlog -work work -sv -stats=none E:/CPEN311/311Labs/tim_yang_53414207_xuan_tung_luu_30236798_Lab_5/rtl/LFSR.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module LFSR
+
+Top level modules:
+	LFSR
+
+} {} {}} E:/CPEN311/311Labs/tim_yang_53414207_xuan_tung_luu_30236798_Lab_5/sim/LFSR/LFSR_tb.sv {1 {vlog -work work -sv -stats=none E:/CPEN311/311Labs/tim_yang_53414207_xuan_tung_luu_30236798_Lab_5/sim/LFSR/LFSR_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module LFSR_tb
+
+Top level modules:
+	LFSR_tb
+
+} {} {}}

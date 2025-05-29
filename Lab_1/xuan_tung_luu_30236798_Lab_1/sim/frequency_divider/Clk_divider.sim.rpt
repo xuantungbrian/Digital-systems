@@ -1,0 +1,786 @@
+Simulator report for Clk_divider
+Sun May 28 22:54:35 2023
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 353 nodes    ;
+; Simulation Coverage         ;      22.79 % ;
+; Total Number of Transitions ; 5960         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      22.79 % ;
+; Total nodes checked                                 ; 353          ;
+; Total output ports checked                          ; 351          ;
+; Total output ports with complete 1/0-value coverage ; 80           ;
+; Total output ports with no 1/0-value coverage       ; 271          ;
+; Total output ports with no 1-value coverage         ; 271          ;
+; Total output ports with no 0-value coverage         ; 271          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                          ;
++-----------------------------------------+-----------------------------------------+------------------+
+; Node Name                               ; Output Port Name                        ; Output Port Type ;
++-----------------------------------------+-----------------------------------------+------------------+
+; |Clk_divider|rst                        ; |Clk_divider|rst                        ; regout           ;
+; |Clk_divider|outclk~0                   ; |Clk_divider|outclk~0                   ; out              ;
+; |Clk_divider|outclk~1                   ; |Clk_divider|outclk~1                   ; out              ;
+; |Clk_divider|rst~0                      ; |Clk_divider|rst~0                      ; out              ;
+; |Clk_divider|outclk~reg0                ; |Clk_divider|outclk~reg0                ; regout           ;
+; |Clk_divider|inclk                      ; |Clk_divider|inclk                      ; out              ;
+; |Clk_divider|outclk                     ; |Clk_divider|outclk                     ; pin_out          ;
+; |Clk_divider|Counter:COUNTER|counter[2] ; |Clk_divider|Counter:COUNTER|counter[2] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[1] ; |Clk_divider|Counter:COUNTER|counter[1] ; regout           ;
+; |Clk_divider|LessThan0~1                ; |Clk_divider|LessThan0~1                ; out0             ;
+; |Clk_divider|LessThan0~2                ; |Clk_divider|LessThan0~2                ; out0             ;
+; |Clk_divider|LessThan0~4                ; |Clk_divider|LessThan0~4                ; out0             ;
+; |Clk_divider|LessThan0~5                ; |Clk_divider|LessThan0~5                ; out0             ;
+; |Clk_divider|LessThan0~6                ; |Clk_divider|LessThan0~6                ; out0             ;
+; |Clk_divider|LessThan0~8                ; |Clk_divider|LessThan0~8                ; out0             ;
+; |Clk_divider|LessThan0~9                ; |Clk_divider|LessThan0~9                ; out0             ;
+; |Clk_divider|LessThan0~10               ; |Clk_divider|LessThan0~10               ; out0             ;
+; |Clk_divider|LessThan0~12               ; |Clk_divider|LessThan0~12               ; out0             ;
+; |Clk_divider|LessThan0~14               ; |Clk_divider|LessThan0~14               ; out0             ;
+; |Clk_divider|LessThan0~16               ; |Clk_divider|LessThan0~16               ; out0             ;
+; |Clk_divider|LessThan0~18               ; |Clk_divider|LessThan0~18               ; out0             ;
+; |Clk_divider|LessThan0~20               ; |Clk_divider|LessThan0~20               ; out0             ;
+; |Clk_divider|LessThan0~22               ; |Clk_divider|LessThan0~22               ; out0             ;
+; |Clk_divider|LessThan0~24               ; |Clk_divider|LessThan0~24               ; out0             ;
+; |Clk_divider|LessThan0~26               ; |Clk_divider|LessThan0~26               ; out0             ;
+; |Clk_divider|LessThan0~28               ; |Clk_divider|LessThan0~28               ; out0             ;
+; |Clk_divider|LessThan0~30               ; |Clk_divider|LessThan0~30               ; out0             ;
+; |Clk_divider|LessThan0~32               ; |Clk_divider|LessThan0~32               ; out0             ;
+; |Clk_divider|LessThan0~34               ; |Clk_divider|LessThan0~34               ; out0             ;
+; |Clk_divider|LessThan0~36               ; |Clk_divider|LessThan0~36               ; out0             ;
+; |Clk_divider|LessThan0~38               ; |Clk_divider|LessThan0~38               ; out0             ;
+; |Clk_divider|LessThan0~40               ; |Clk_divider|LessThan0~40               ; out0             ;
+; |Clk_divider|LessThan0~42               ; |Clk_divider|LessThan0~42               ; out0             ;
+; |Clk_divider|LessThan0~44               ; |Clk_divider|LessThan0~44               ; out0             ;
+; |Clk_divider|LessThan0~46               ; |Clk_divider|LessThan0~46               ; out0             ;
+; |Clk_divider|LessThan0~48               ; |Clk_divider|LessThan0~48               ; out0             ;
+; |Clk_divider|LessThan0~50               ; |Clk_divider|LessThan0~50               ; out0             ;
+; |Clk_divider|LessThan0~52               ; |Clk_divider|LessThan0~52               ; out0             ;
+; |Clk_divider|LessThan0~54               ; |Clk_divider|LessThan0~54               ; out0             ;
+; |Clk_divider|LessThan0~56               ; |Clk_divider|LessThan0~56               ; out0             ;
+; |Clk_divider|LessThan0~58               ; |Clk_divider|LessThan0~58               ; out0             ;
+; |Clk_divider|LessThan0~60               ; |Clk_divider|LessThan0~60               ; out0             ;
+; |Clk_divider|LessThan0~62               ; |Clk_divider|LessThan0~62               ; out0             ;
+; |Clk_divider|LessThan0~64               ; |Clk_divider|LessThan0~64               ; out0             ;
+; |Clk_divider|LessThan0~66               ; |Clk_divider|LessThan0~66               ; out0             ;
+; |Clk_divider|LessThan0~68               ; |Clk_divider|LessThan0~68               ; out0             ;
+; |Clk_divider|LessThan0~70               ; |Clk_divider|LessThan0~70               ; out0             ;
+; |Clk_divider|LessThan0~72               ; |Clk_divider|LessThan0~72               ; out0             ;
+; |Clk_divider|LessThan0~74               ; |Clk_divider|LessThan0~74               ; out0             ;
+; |Clk_divider|LessThan0~76               ; |Clk_divider|LessThan0~76               ; out0             ;
+; |Clk_divider|LessThan0~78               ; |Clk_divider|LessThan0~78               ; out0             ;
+; |Clk_divider|LessThan0~80               ; |Clk_divider|LessThan0~80               ; out0             ;
+; |Clk_divider|LessThan0~82               ; |Clk_divider|LessThan0~82               ; out0             ;
+; |Clk_divider|LessThan0~84               ; |Clk_divider|LessThan0~84               ; out0             ;
+; |Clk_divider|LessThan0~86               ; |Clk_divider|LessThan0~86               ; out0             ;
+; |Clk_divider|LessThan0~88               ; |Clk_divider|LessThan0~88               ; out0             ;
+; |Clk_divider|LessThan0~90               ; |Clk_divider|LessThan0~90               ; out0             ;
+; |Clk_divider|LessThan0~92               ; |Clk_divider|LessThan0~92               ; out0             ;
+; |Clk_divider|LessThan0~94               ; |Clk_divider|LessThan0~94               ; out0             ;
+; |Clk_divider|LessThan0~96               ; |Clk_divider|LessThan0~96               ; out0             ;
+; |Clk_divider|LessThan0~98               ; |Clk_divider|LessThan0~98               ; out0             ;
+; |Clk_divider|LessThan0~100              ; |Clk_divider|LessThan0~100              ; out0             ;
+; |Clk_divider|LessThan0~102              ; |Clk_divider|LessThan0~102              ; out0             ;
+; |Clk_divider|LessThan0~104              ; |Clk_divider|LessThan0~104              ; out0             ;
+; |Clk_divider|LessThan0~106              ; |Clk_divider|LessThan0~106              ; out0             ;
+; |Clk_divider|LessThan0~108              ; |Clk_divider|LessThan0~108              ; out0             ;
+; |Clk_divider|LessThan0~110              ; |Clk_divider|LessThan0~110              ; out0             ;
+; |Clk_divider|LessThan0~112              ; |Clk_divider|LessThan0~112              ; out0             ;
+; |Clk_divider|LessThan0~114              ; |Clk_divider|LessThan0~114              ; out0             ;
+; |Clk_divider|LessThan0~116              ; |Clk_divider|LessThan0~116              ; out0             ;
+; |Clk_divider|LessThan0~118              ; |Clk_divider|LessThan0~118              ; out0             ;
+; |Clk_divider|LessThan0~120              ; |Clk_divider|LessThan0~120              ; out0             ;
+; |Clk_divider|LessThan0~122              ; |Clk_divider|LessThan0~122              ; out0             ;
+; |Clk_divider|LessThan0~124              ; |Clk_divider|LessThan0~124              ; out0             ;
+; |Clk_divider|LessThan0~126              ; |Clk_divider|LessThan0~126              ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~0     ; |Clk_divider|Counter:COUNTER|Add0~0     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~1     ; |Clk_divider|Counter:COUNTER|Add0~1     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~2     ; |Clk_divider|Counter:COUNTER|Add0~2     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~3     ; |Clk_divider|Counter:COUNTER|Add0~3     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~4     ; |Clk_divider|Counter:COUNTER|Add0~4     ; out0             ;
++-----------------------------------------+-----------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                               ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |Clk_divider|div_clk_count[0]            ; |Clk_divider|div_clk_count[0]            ; out              ;
+; |Clk_divider|div_clk_count[1]            ; |Clk_divider|div_clk_count[1]            ; out              ;
+; |Clk_divider|div_clk_count[2]            ; |Clk_divider|div_clk_count[2]            ; out              ;
+; |Clk_divider|div_clk_count[3]            ; |Clk_divider|div_clk_count[3]            ; out              ;
+; |Clk_divider|div_clk_count[4]            ; |Clk_divider|div_clk_count[4]            ; out              ;
+; |Clk_divider|div_clk_count[5]            ; |Clk_divider|div_clk_count[5]            ; out              ;
+; |Clk_divider|div_clk_count[6]            ; |Clk_divider|div_clk_count[6]            ; out              ;
+; |Clk_divider|div_clk_count[7]            ; |Clk_divider|div_clk_count[7]            ; out              ;
+; |Clk_divider|div_clk_count[8]            ; |Clk_divider|div_clk_count[8]            ; out              ;
+; |Clk_divider|div_clk_count[9]            ; |Clk_divider|div_clk_count[9]            ; out              ;
+; |Clk_divider|div_clk_count[10]           ; |Clk_divider|div_clk_count[10]           ; out              ;
+; |Clk_divider|div_clk_count[11]           ; |Clk_divider|div_clk_count[11]           ; out              ;
+; |Clk_divider|div_clk_count[12]           ; |Clk_divider|div_clk_count[12]           ; out              ;
+; |Clk_divider|div_clk_count[13]           ; |Clk_divider|div_clk_count[13]           ; out              ;
+; |Clk_divider|div_clk_count[14]           ; |Clk_divider|div_clk_count[14]           ; out              ;
+; |Clk_divider|div_clk_count[15]           ; |Clk_divider|div_clk_count[15]           ; out              ;
+; |Clk_divider|div_clk_count[16]           ; |Clk_divider|div_clk_count[16]           ; out              ;
+; |Clk_divider|div_clk_count[17]           ; |Clk_divider|div_clk_count[17]           ; out              ;
+; |Clk_divider|div_clk_count[18]           ; |Clk_divider|div_clk_count[18]           ; out              ;
+; |Clk_divider|div_clk_count[19]           ; |Clk_divider|div_clk_count[19]           ; out              ;
+; |Clk_divider|div_clk_count[20]           ; |Clk_divider|div_clk_count[20]           ; out              ;
+; |Clk_divider|div_clk_count[21]           ; |Clk_divider|div_clk_count[21]           ; out              ;
+; |Clk_divider|div_clk_count[22]           ; |Clk_divider|div_clk_count[22]           ; out              ;
+; |Clk_divider|div_clk_count[23]           ; |Clk_divider|div_clk_count[23]           ; out              ;
+; |Clk_divider|div_clk_count[24]           ; |Clk_divider|div_clk_count[24]           ; out              ;
+; |Clk_divider|div_clk_count[25]           ; |Clk_divider|div_clk_count[25]           ; out              ;
+; |Clk_divider|div_clk_count[26]           ; |Clk_divider|div_clk_count[26]           ; out              ;
+; |Clk_divider|div_clk_count[27]           ; |Clk_divider|div_clk_count[27]           ; out              ;
+; |Clk_divider|div_clk_count[28]           ; |Clk_divider|div_clk_count[28]           ; out              ;
+; |Clk_divider|div_clk_count[29]           ; |Clk_divider|div_clk_count[29]           ; out              ;
+; |Clk_divider|div_clk_count[30]           ; |Clk_divider|div_clk_count[30]           ; out              ;
+; |Clk_divider|div_clk_count[31]           ; |Clk_divider|div_clk_count[31]           ; out              ;
+; |Clk_divider|outclk_Not                  ; |Clk_divider|outclk_Not                  ; pin_out          ;
+; |Clk_divider|Counter:COUNTER|counter[31] ; |Clk_divider|Counter:COUNTER|counter[31] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[30] ; |Clk_divider|Counter:COUNTER|counter[30] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[29] ; |Clk_divider|Counter:COUNTER|counter[29] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[28] ; |Clk_divider|Counter:COUNTER|counter[28] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[27] ; |Clk_divider|Counter:COUNTER|counter[27] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[26] ; |Clk_divider|Counter:COUNTER|counter[26] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[25] ; |Clk_divider|Counter:COUNTER|counter[25] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[24] ; |Clk_divider|Counter:COUNTER|counter[24] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[23] ; |Clk_divider|Counter:COUNTER|counter[23] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[22] ; |Clk_divider|Counter:COUNTER|counter[22] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[21] ; |Clk_divider|Counter:COUNTER|counter[21] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[20] ; |Clk_divider|Counter:COUNTER|counter[20] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[19] ; |Clk_divider|Counter:COUNTER|counter[19] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[18] ; |Clk_divider|Counter:COUNTER|counter[18] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[17] ; |Clk_divider|Counter:COUNTER|counter[17] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[16] ; |Clk_divider|Counter:COUNTER|counter[16] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[15] ; |Clk_divider|Counter:COUNTER|counter[15] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[14] ; |Clk_divider|Counter:COUNTER|counter[14] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[13] ; |Clk_divider|Counter:COUNTER|counter[13] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[12] ; |Clk_divider|Counter:COUNTER|counter[12] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[11] ; |Clk_divider|Counter:COUNTER|counter[11] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[10] ; |Clk_divider|Counter:COUNTER|counter[10] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[9]  ; |Clk_divider|Counter:COUNTER|counter[9]  ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[8]  ; |Clk_divider|Counter:COUNTER|counter[8]  ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[7]  ; |Clk_divider|Counter:COUNTER|counter[7]  ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[6]  ; |Clk_divider|Counter:COUNTER|counter[6]  ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[5]  ; |Clk_divider|Counter:COUNTER|counter[5]  ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[4]  ; |Clk_divider|Counter:COUNTER|counter[4]  ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[3]  ; |Clk_divider|Counter:COUNTER|counter[3]  ; regout           ;
+; |Clk_divider|LessThan0~0                 ; |Clk_divider|LessThan0~0                 ; out0             ;
+; |Clk_divider|LessThan0~3                 ; |Clk_divider|LessThan0~3                 ; out0             ;
+; |Clk_divider|LessThan0~7                 ; |Clk_divider|LessThan0~7                 ; out0             ;
+; |Clk_divider|LessThan0~11                ; |Clk_divider|LessThan0~11                ; out0             ;
+; |Clk_divider|LessThan0~13                ; |Clk_divider|LessThan0~13                ; out0             ;
+; |Clk_divider|LessThan0~15                ; |Clk_divider|LessThan0~15                ; out0             ;
+; |Clk_divider|LessThan0~17                ; |Clk_divider|LessThan0~17                ; out0             ;
+; |Clk_divider|LessThan0~19                ; |Clk_divider|LessThan0~19                ; out0             ;
+; |Clk_divider|LessThan0~21                ; |Clk_divider|LessThan0~21                ; out0             ;
+; |Clk_divider|LessThan0~23                ; |Clk_divider|LessThan0~23                ; out0             ;
+; |Clk_divider|LessThan0~25                ; |Clk_divider|LessThan0~25                ; out0             ;
+; |Clk_divider|LessThan0~27                ; |Clk_divider|LessThan0~27                ; out0             ;
+; |Clk_divider|LessThan0~29                ; |Clk_divider|LessThan0~29                ; out0             ;
+; |Clk_divider|LessThan0~31                ; |Clk_divider|LessThan0~31                ; out0             ;
+; |Clk_divider|LessThan0~33                ; |Clk_divider|LessThan0~33                ; out0             ;
+; |Clk_divider|LessThan0~35                ; |Clk_divider|LessThan0~35                ; out0             ;
+; |Clk_divider|LessThan0~37                ; |Clk_divider|LessThan0~37                ; out0             ;
+; |Clk_divider|LessThan0~39                ; |Clk_divider|LessThan0~39                ; out0             ;
+; |Clk_divider|LessThan0~41                ; |Clk_divider|LessThan0~41                ; out0             ;
+; |Clk_divider|LessThan0~43                ; |Clk_divider|LessThan0~43                ; out0             ;
+; |Clk_divider|LessThan0~45                ; |Clk_divider|LessThan0~45                ; out0             ;
+; |Clk_divider|LessThan0~47                ; |Clk_divider|LessThan0~47                ; out0             ;
+; |Clk_divider|LessThan0~49                ; |Clk_divider|LessThan0~49                ; out0             ;
+; |Clk_divider|LessThan0~51                ; |Clk_divider|LessThan0~51                ; out0             ;
+; |Clk_divider|LessThan0~53                ; |Clk_divider|LessThan0~53                ; out0             ;
+; |Clk_divider|LessThan0~55                ; |Clk_divider|LessThan0~55                ; out0             ;
+; |Clk_divider|LessThan0~57                ; |Clk_divider|LessThan0~57                ; out0             ;
+; |Clk_divider|LessThan0~59                ; |Clk_divider|LessThan0~59                ; out0             ;
+; |Clk_divider|LessThan0~61                ; |Clk_divider|LessThan0~61                ; out0             ;
+; |Clk_divider|LessThan0~63                ; |Clk_divider|LessThan0~63                ; out0             ;
+; |Clk_divider|LessThan0~65                ; |Clk_divider|LessThan0~65                ; out0             ;
+; |Clk_divider|LessThan0~67                ; |Clk_divider|LessThan0~67                ; out0             ;
+; |Clk_divider|LessThan0~69                ; |Clk_divider|LessThan0~69                ; out0             ;
+; |Clk_divider|LessThan0~71                ; |Clk_divider|LessThan0~71                ; out0             ;
+; |Clk_divider|LessThan0~73                ; |Clk_divider|LessThan0~73                ; out0             ;
+; |Clk_divider|LessThan0~75                ; |Clk_divider|LessThan0~75                ; out0             ;
+; |Clk_divider|LessThan0~77                ; |Clk_divider|LessThan0~77                ; out0             ;
+; |Clk_divider|LessThan0~79                ; |Clk_divider|LessThan0~79                ; out0             ;
+; |Clk_divider|LessThan0~81                ; |Clk_divider|LessThan0~81                ; out0             ;
+; |Clk_divider|LessThan0~83                ; |Clk_divider|LessThan0~83                ; out0             ;
+; |Clk_divider|LessThan0~85                ; |Clk_divider|LessThan0~85                ; out0             ;
+; |Clk_divider|LessThan0~87                ; |Clk_divider|LessThan0~87                ; out0             ;
+; |Clk_divider|LessThan0~89                ; |Clk_divider|LessThan0~89                ; out0             ;
+; |Clk_divider|LessThan0~91                ; |Clk_divider|LessThan0~91                ; out0             ;
+; |Clk_divider|LessThan0~93                ; |Clk_divider|LessThan0~93                ; out0             ;
+; |Clk_divider|LessThan0~95                ; |Clk_divider|LessThan0~95                ; out0             ;
+; |Clk_divider|LessThan0~97                ; |Clk_divider|LessThan0~97                ; out0             ;
+; |Clk_divider|LessThan0~99                ; |Clk_divider|LessThan0~99                ; out0             ;
+; |Clk_divider|LessThan0~101               ; |Clk_divider|LessThan0~101               ; out0             ;
+; |Clk_divider|LessThan0~103               ; |Clk_divider|LessThan0~103               ; out0             ;
+; |Clk_divider|LessThan0~105               ; |Clk_divider|LessThan0~105               ; out0             ;
+; |Clk_divider|LessThan0~107               ; |Clk_divider|LessThan0~107               ; out0             ;
+; |Clk_divider|LessThan0~109               ; |Clk_divider|LessThan0~109               ; out0             ;
+; |Clk_divider|LessThan0~111               ; |Clk_divider|LessThan0~111               ; out0             ;
+; |Clk_divider|LessThan0~113               ; |Clk_divider|LessThan0~113               ; out0             ;
+; |Clk_divider|LessThan0~115               ; |Clk_divider|LessThan0~115               ; out0             ;
+; |Clk_divider|LessThan0~117               ; |Clk_divider|LessThan0~117               ; out0             ;
+; |Clk_divider|LessThan0~119               ; |Clk_divider|LessThan0~119               ; out0             ;
+; |Clk_divider|LessThan0~121               ; |Clk_divider|LessThan0~121               ; out0             ;
+; |Clk_divider|LessThan0~123               ; |Clk_divider|LessThan0~123               ; out0             ;
+; |Clk_divider|LessThan0~125               ; |Clk_divider|LessThan0~125               ; out0             ;
+; |Clk_divider|Add0~0                      ; |Clk_divider|Add0~0                      ; out0             ;
+; |Clk_divider|Add0~1                      ; |Clk_divider|Add0~1                      ; out0             ;
+; |Clk_divider|Add0~2                      ; |Clk_divider|Add0~2                      ; out0             ;
+; |Clk_divider|Add0~3                      ; |Clk_divider|Add0~3                      ; out0             ;
+; |Clk_divider|Add0~4                      ; |Clk_divider|Add0~4                      ; out0             ;
+; |Clk_divider|Add0~5                      ; |Clk_divider|Add0~5                      ; out0             ;
+; |Clk_divider|Add0~6                      ; |Clk_divider|Add0~6                      ; out0             ;
+; |Clk_divider|Add0~7                      ; |Clk_divider|Add0~7                      ; out0             ;
+; |Clk_divider|Add0~8                      ; |Clk_divider|Add0~8                      ; out0             ;
+; |Clk_divider|Add0~9                      ; |Clk_divider|Add0~9                      ; out0             ;
+; |Clk_divider|Add0~10                     ; |Clk_divider|Add0~10                     ; out0             ;
+; |Clk_divider|Add0~11                     ; |Clk_divider|Add0~11                     ; out0             ;
+; |Clk_divider|Add0~12                     ; |Clk_divider|Add0~12                     ; out0             ;
+; |Clk_divider|Add0~13                     ; |Clk_divider|Add0~13                     ; out0             ;
+; |Clk_divider|Add0~14                     ; |Clk_divider|Add0~14                     ; out0             ;
+; |Clk_divider|Add0~15                     ; |Clk_divider|Add0~15                     ; out0             ;
+; |Clk_divider|Add0~16                     ; |Clk_divider|Add0~16                     ; out0             ;
+; |Clk_divider|Add0~17                     ; |Clk_divider|Add0~17                     ; out0             ;
+; |Clk_divider|Add0~18                     ; |Clk_divider|Add0~18                     ; out0             ;
+; |Clk_divider|Add0~19                     ; |Clk_divider|Add0~19                     ; out0             ;
+; |Clk_divider|Add0~20                     ; |Clk_divider|Add0~20                     ; out0             ;
+; |Clk_divider|Add0~21                     ; |Clk_divider|Add0~21                     ; out0             ;
+; |Clk_divider|Add0~22                     ; |Clk_divider|Add0~22                     ; out0             ;
+; |Clk_divider|Add0~23                     ; |Clk_divider|Add0~23                     ; out0             ;
+; |Clk_divider|Add0~24                     ; |Clk_divider|Add0~24                     ; out0             ;
+; |Clk_divider|Add0~25                     ; |Clk_divider|Add0~25                     ; out0             ;
+; |Clk_divider|Add0~26                     ; |Clk_divider|Add0~26                     ; out0             ;
+; |Clk_divider|Add0~27                     ; |Clk_divider|Add0~27                     ; out0             ;
+; |Clk_divider|Add0~28                     ; |Clk_divider|Add0~28                     ; out0             ;
+; |Clk_divider|Add0~29                     ; |Clk_divider|Add0~29                     ; out0             ;
+; |Clk_divider|Add0~30                     ; |Clk_divider|Add0~30                     ; out0             ;
+; |Clk_divider|Add0~31                     ; |Clk_divider|Add0~31                     ; out0             ;
+; |Clk_divider|Add0~32                     ; |Clk_divider|Add0~32                     ; out0             ;
+; |Clk_divider|Add0~33                     ; |Clk_divider|Add0~33                     ; out0             ;
+; |Clk_divider|Add0~34                     ; |Clk_divider|Add0~34                     ; out0             ;
+; |Clk_divider|Add0~35                     ; |Clk_divider|Add0~35                     ; out0             ;
+; |Clk_divider|Add0~36                     ; |Clk_divider|Add0~36                     ; out0             ;
+; |Clk_divider|Add0~37                     ; |Clk_divider|Add0~37                     ; out0             ;
+; |Clk_divider|Add0~38                     ; |Clk_divider|Add0~38                     ; out0             ;
+; |Clk_divider|Add0~39                     ; |Clk_divider|Add0~39                     ; out0             ;
+; |Clk_divider|Add0~40                     ; |Clk_divider|Add0~40                     ; out0             ;
+; |Clk_divider|Add0~41                     ; |Clk_divider|Add0~41                     ; out0             ;
+; |Clk_divider|Add0~42                     ; |Clk_divider|Add0~42                     ; out0             ;
+; |Clk_divider|Add0~43                     ; |Clk_divider|Add0~43                     ; out0             ;
+; |Clk_divider|Add0~44                     ; |Clk_divider|Add0~44                     ; out0             ;
+; |Clk_divider|Add0~45                     ; |Clk_divider|Add0~45                     ; out0             ;
+; |Clk_divider|Add0~46                     ; |Clk_divider|Add0~46                     ; out0             ;
+; |Clk_divider|Add0~47                     ; |Clk_divider|Add0~47                     ; out0             ;
+; |Clk_divider|Add0~48                     ; |Clk_divider|Add0~48                     ; out0             ;
+; |Clk_divider|Add0~49                     ; |Clk_divider|Add0~49                     ; out0             ;
+; |Clk_divider|Add0~50                     ; |Clk_divider|Add0~50                     ; out0             ;
+; |Clk_divider|Add0~51                     ; |Clk_divider|Add0~51                     ; out0             ;
+; |Clk_divider|Add0~52                     ; |Clk_divider|Add0~52                     ; out0             ;
+; |Clk_divider|Add0~53                     ; |Clk_divider|Add0~53                     ; out0             ;
+; |Clk_divider|Add0~54                     ; |Clk_divider|Add0~54                     ; out0             ;
+; |Clk_divider|Add0~55                     ; |Clk_divider|Add0~55                     ; out0             ;
+; |Clk_divider|Add0~56                     ; |Clk_divider|Add0~56                     ; out0             ;
+; |Clk_divider|Add0~57                     ; |Clk_divider|Add0~57                     ; out0             ;
+; |Clk_divider|Add0~58                     ; |Clk_divider|Add0~58                     ; out0             ;
+; |Clk_divider|Add0~59                     ; |Clk_divider|Add0~59                     ; out0             ;
+; |Clk_divider|Add0~60                     ; |Clk_divider|Add0~60                     ; out0             ;
+; |Clk_divider|Add0~61                     ; |Clk_divider|Add0~61                     ; out0             ;
+; |Clk_divider|Add0~62                     ; |Clk_divider|Add0~62                     ; out0             ;
+; |Clk_divider|Add0~63                     ; |Clk_divider|Add0~63                     ; out0             ;
+; |Clk_divider|Add0~64                     ; |Clk_divider|Add0~64                     ; out0             ;
+; |Clk_divider|Add0~65                     ; |Clk_divider|Add0~65                     ; out0             ;
+; |Clk_divider|Add0~66                     ; |Clk_divider|Add0~66                     ; out0             ;
+; |Clk_divider|Add0~67                     ; |Clk_divider|Add0~67                     ; out0             ;
+; |Clk_divider|Add0~68                     ; |Clk_divider|Add0~68                     ; out0             ;
+; |Clk_divider|Add0~69                     ; |Clk_divider|Add0~69                     ; out0             ;
+; |Clk_divider|Add0~70                     ; |Clk_divider|Add0~70                     ; out0             ;
+; |Clk_divider|Add0~71                     ; |Clk_divider|Add0~71                     ; out0             ;
+; |Clk_divider|Add0~72                     ; |Clk_divider|Add0~72                     ; out0             ;
+; |Clk_divider|Add0~73                     ; |Clk_divider|Add0~73                     ; out0             ;
+; |Clk_divider|Add0~74                     ; |Clk_divider|Add0~74                     ; out0             ;
+; |Clk_divider|Add0~75                     ; |Clk_divider|Add0~75                     ; out0             ;
+; |Clk_divider|Add0~76                     ; |Clk_divider|Add0~76                     ; out0             ;
+; |Clk_divider|Add0~77                     ; |Clk_divider|Add0~77                     ; out0             ;
+; |Clk_divider|Add0~78                     ; |Clk_divider|Add0~78                     ; out0             ;
+; |Clk_divider|Add0~79                     ; |Clk_divider|Add0~79                     ; out0             ;
+; |Clk_divider|Add0~80                     ; |Clk_divider|Add0~80                     ; out0             ;
+; |Clk_divider|Add0~81                     ; |Clk_divider|Add0~81                     ; out0             ;
+; |Clk_divider|Add0~82                     ; |Clk_divider|Add0~82                     ; out0             ;
+; |Clk_divider|Add0~83                     ; |Clk_divider|Add0~83                     ; out0             ;
+; |Clk_divider|Add0~84                     ; |Clk_divider|Add0~84                     ; out0             ;
+; |Clk_divider|Add0~85                     ; |Clk_divider|Add0~85                     ; out0             ;
+; |Clk_divider|Add0~86                     ; |Clk_divider|Add0~86                     ; out0             ;
+; |Clk_divider|Add0~87                     ; |Clk_divider|Add0~87                     ; out0             ;
+; |Clk_divider|Add0~88                     ; |Clk_divider|Add0~88                     ; out0             ;
+; |Clk_divider|Add0~89                     ; |Clk_divider|Add0~89                     ; out0             ;
+; |Clk_divider|Add0~90                     ; |Clk_divider|Add0~90                     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~5      ; |Clk_divider|Counter:COUNTER|Add0~5      ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~6      ; |Clk_divider|Counter:COUNTER|Add0~6      ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~7      ; |Clk_divider|Counter:COUNTER|Add0~7      ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~8      ; |Clk_divider|Counter:COUNTER|Add0~8      ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~9      ; |Clk_divider|Counter:COUNTER|Add0~9      ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~10     ; |Clk_divider|Counter:COUNTER|Add0~10     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~11     ; |Clk_divider|Counter:COUNTER|Add0~11     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~12     ; |Clk_divider|Counter:COUNTER|Add0~12     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~13     ; |Clk_divider|Counter:COUNTER|Add0~13     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~14     ; |Clk_divider|Counter:COUNTER|Add0~14     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~15     ; |Clk_divider|Counter:COUNTER|Add0~15     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~16     ; |Clk_divider|Counter:COUNTER|Add0~16     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~17     ; |Clk_divider|Counter:COUNTER|Add0~17     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~18     ; |Clk_divider|Counter:COUNTER|Add0~18     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~19     ; |Clk_divider|Counter:COUNTER|Add0~19     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~20     ; |Clk_divider|Counter:COUNTER|Add0~20     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~21     ; |Clk_divider|Counter:COUNTER|Add0~21     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~22     ; |Clk_divider|Counter:COUNTER|Add0~22     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~23     ; |Clk_divider|Counter:COUNTER|Add0~23     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~24     ; |Clk_divider|Counter:COUNTER|Add0~24     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~25     ; |Clk_divider|Counter:COUNTER|Add0~25     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~26     ; |Clk_divider|Counter:COUNTER|Add0~26     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~27     ; |Clk_divider|Counter:COUNTER|Add0~27     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~28     ; |Clk_divider|Counter:COUNTER|Add0~28     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~29     ; |Clk_divider|Counter:COUNTER|Add0~29     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~30     ; |Clk_divider|Counter:COUNTER|Add0~30     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~31     ; |Clk_divider|Counter:COUNTER|Add0~31     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~32     ; |Clk_divider|Counter:COUNTER|Add0~32     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~33     ; |Clk_divider|Counter:COUNTER|Add0~33     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~34     ; |Clk_divider|Counter:COUNTER|Add0~34     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~35     ; |Clk_divider|Counter:COUNTER|Add0~35     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~36     ; |Clk_divider|Counter:COUNTER|Add0~36     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~37     ; |Clk_divider|Counter:COUNTER|Add0~37     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~38     ; |Clk_divider|Counter:COUNTER|Add0~38     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~39     ; |Clk_divider|Counter:COUNTER|Add0~39     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~40     ; |Clk_divider|Counter:COUNTER|Add0~40     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~41     ; |Clk_divider|Counter:COUNTER|Add0~41     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~42     ; |Clk_divider|Counter:COUNTER|Add0~42     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~43     ; |Clk_divider|Counter:COUNTER|Add0~43     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~44     ; |Clk_divider|Counter:COUNTER|Add0~44     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~45     ; |Clk_divider|Counter:COUNTER|Add0~45     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~46     ; |Clk_divider|Counter:COUNTER|Add0~46     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~47     ; |Clk_divider|Counter:COUNTER|Add0~47     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~48     ; |Clk_divider|Counter:COUNTER|Add0~48     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~49     ; |Clk_divider|Counter:COUNTER|Add0~49     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~50     ; |Clk_divider|Counter:COUNTER|Add0~50     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~51     ; |Clk_divider|Counter:COUNTER|Add0~51     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~52     ; |Clk_divider|Counter:COUNTER|Add0~52     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~53     ; |Clk_divider|Counter:COUNTER|Add0~53     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~54     ; |Clk_divider|Counter:COUNTER|Add0~54     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~55     ; |Clk_divider|Counter:COUNTER|Add0~55     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~56     ; |Clk_divider|Counter:COUNTER|Add0~56     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~57     ; |Clk_divider|Counter:COUNTER|Add0~57     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~58     ; |Clk_divider|Counter:COUNTER|Add0~58     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~59     ; |Clk_divider|Counter:COUNTER|Add0~59     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~60     ; |Clk_divider|Counter:COUNTER|Add0~60     ; out0             ;
+; |Clk_divider|Equal0~0                    ; |Clk_divider|Equal0~0                    ; out0             ;
++------------------------------------------+------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                               ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |Clk_divider|div_clk_count[0]            ; |Clk_divider|div_clk_count[0]            ; out              ;
+; |Clk_divider|div_clk_count[1]            ; |Clk_divider|div_clk_count[1]            ; out              ;
+; |Clk_divider|div_clk_count[2]            ; |Clk_divider|div_clk_count[2]            ; out              ;
+; |Clk_divider|div_clk_count[3]            ; |Clk_divider|div_clk_count[3]            ; out              ;
+; |Clk_divider|div_clk_count[4]            ; |Clk_divider|div_clk_count[4]            ; out              ;
+; |Clk_divider|div_clk_count[5]            ; |Clk_divider|div_clk_count[5]            ; out              ;
+; |Clk_divider|div_clk_count[6]            ; |Clk_divider|div_clk_count[6]            ; out              ;
+; |Clk_divider|div_clk_count[7]            ; |Clk_divider|div_clk_count[7]            ; out              ;
+; |Clk_divider|div_clk_count[8]            ; |Clk_divider|div_clk_count[8]            ; out              ;
+; |Clk_divider|div_clk_count[9]            ; |Clk_divider|div_clk_count[9]            ; out              ;
+; |Clk_divider|div_clk_count[10]           ; |Clk_divider|div_clk_count[10]           ; out              ;
+; |Clk_divider|div_clk_count[11]           ; |Clk_divider|div_clk_count[11]           ; out              ;
+; |Clk_divider|div_clk_count[12]           ; |Clk_divider|div_clk_count[12]           ; out              ;
+; |Clk_divider|div_clk_count[13]           ; |Clk_divider|div_clk_count[13]           ; out              ;
+; |Clk_divider|div_clk_count[14]           ; |Clk_divider|div_clk_count[14]           ; out              ;
+; |Clk_divider|div_clk_count[15]           ; |Clk_divider|div_clk_count[15]           ; out              ;
+; |Clk_divider|div_clk_count[16]           ; |Clk_divider|div_clk_count[16]           ; out              ;
+; |Clk_divider|div_clk_count[17]           ; |Clk_divider|div_clk_count[17]           ; out              ;
+; |Clk_divider|div_clk_count[18]           ; |Clk_divider|div_clk_count[18]           ; out              ;
+; |Clk_divider|div_clk_count[19]           ; |Clk_divider|div_clk_count[19]           ; out              ;
+; |Clk_divider|div_clk_count[20]           ; |Clk_divider|div_clk_count[20]           ; out              ;
+; |Clk_divider|div_clk_count[21]           ; |Clk_divider|div_clk_count[21]           ; out              ;
+; |Clk_divider|div_clk_count[22]           ; |Clk_divider|div_clk_count[22]           ; out              ;
+; |Clk_divider|div_clk_count[23]           ; |Clk_divider|div_clk_count[23]           ; out              ;
+; |Clk_divider|div_clk_count[24]           ; |Clk_divider|div_clk_count[24]           ; out              ;
+; |Clk_divider|div_clk_count[25]           ; |Clk_divider|div_clk_count[25]           ; out              ;
+; |Clk_divider|div_clk_count[26]           ; |Clk_divider|div_clk_count[26]           ; out              ;
+; |Clk_divider|div_clk_count[27]           ; |Clk_divider|div_clk_count[27]           ; out              ;
+; |Clk_divider|div_clk_count[28]           ; |Clk_divider|div_clk_count[28]           ; out              ;
+; |Clk_divider|div_clk_count[29]           ; |Clk_divider|div_clk_count[29]           ; out              ;
+; |Clk_divider|div_clk_count[30]           ; |Clk_divider|div_clk_count[30]           ; out              ;
+; |Clk_divider|div_clk_count[31]           ; |Clk_divider|div_clk_count[31]           ; out              ;
+; |Clk_divider|outclk_Not                  ; |Clk_divider|outclk_Not                  ; pin_out          ;
+; |Clk_divider|Counter:COUNTER|counter[31] ; |Clk_divider|Counter:COUNTER|counter[31] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[30] ; |Clk_divider|Counter:COUNTER|counter[30] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[29] ; |Clk_divider|Counter:COUNTER|counter[29] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[28] ; |Clk_divider|Counter:COUNTER|counter[28] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[27] ; |Clk_divider|Counter:COUNTER|counter[27] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[26] ; |Clk_divider|Counter:COUNTER|counter[26] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[25] ; |Clk_divider|Counter:COUNTER|counter[25] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[24] ; |Clk_divider|Counter:COUNTER|counter[24] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[23] ; |Clk_divider|Counter:COUNTER|counter[23] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[22] ; |Clk_divider|Counter:COUNTER|counter[22] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[21] ; |Clk_divider|Counter:COUNTER|counter[21] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[20] ; |Clk_divider|Counter:COUNTER|counter[20] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[19] ; |Clk_divider|Counter:COUNTER|counter[19] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[18] ; |Clk_divider|Counter:COUNTER|counter[18] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[17] ; |Clk_divider|Counter:COUNTER|counter[17] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[16] ; |Clk_divider|Counter:COUNTER|counter[16] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[15] ; |Clk_divider|Counter:COUNTER|counter[15] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[14] ; |Clk_divider|Counter:COUNTER|counter[14] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[13] ; |Clk_divider|Counter:COUNTER|counter[13] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[12] ; |Clk_divider|Counter:COUNTER|counter[12] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[11] ; |Clk_divider|Counter:COUNTER|counter[11] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[10] ; |Clk_divider|Counter:COUNTER|counter[10] ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[9]  ; |Clk_divider|Counter:COUNTER|counter[9]  ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[8]  ; |Clk_divider|Counter:COUNTER|counter[8]  ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[7]  ; |Clk_divider|Counter:COUNTER|counter[7]  ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[6]  ; |Clk_divider|Counter:COUNTER|counter[6]  ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[5]  ; |Clk_divider|Counter:COUNTER|counter[5]  ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[4]  ; |Clk_divider|Counter:COUNTER|counter[4]  ; regout           ;
+; |Clk_divider|Counter:COUNTER|counter[3]  ; |Clk_divider|Counter:COUNTER|counter[3]  ; regout           ;
+; |Clk_divider|LessThan0~0                 ; |Clk_divider|LessThan0~0                 ; out0             ;
+; |Clk_divider|LessThan0~3                 ; |Clk_divider|LessThan0~3                 ; out0             ;
+; |Clk_divider|LessThan0~7                 ; |Clk_divider|LessThan0~7                 ; out0             ;
+; |Clk_divider|LessThan0~11                ; |Clk_divider|LessThan0~11                ; out0             ;
+; |Clk_divider|LessThan0~13                ; |Clk_divider|LessThan0~13                ; out0             ;
+; |Clk_divider|LessThan0~15                ; |Clk_divider|LessThan0~15                ; out0             ;
+; |Clk_divider|LessThan0~17                ; |Clk_divider|LessThan0~17                ; out0             ;
+; |Clk_divider|LessThan0~19                ; |Clk_divider|LessThan0~19                ; out0             ;
+; |Clk_divider|LessThan0~21                ; |Clk_divider|LessThan0~21                ; out0             ;
+; |Clk_divider|LessThan0~23                ; |Clk_divider|LessThan0~23                ; out0             ;
+; |Clk_divider|LessThan0~25                ; |Clk_divider|LessThan0~25                ; out0             ;
+; |Clk_divider|LessThan0~27                ; |Clk_divider|LessThan0~27                ; out0             ;
+; |Clk_divider|LessThan0~29                ; |Clk_divider|LessThan0~29                ; out0             ;
+; |Clk_divider|LessThan0~31                ; |Clk_divider|LessThan0~31                ; out0             ;
+; |Clk_divider|LessThan0~33                ; |Clk_divider|LessThan0~33                ; out0             ;
+; |Clk_divider|LessThan0~35                ; |Clk_divider|LessThan0~35                ; out0             ;
+; |Clk_divider|LessThan0~37                ; |Clk_divider|LessThan0~37                ; out0             ;
+; |Clk_divider|LessThan0~39                ; |Clk_divider|LessThan0~39                ; out0             ;
+; |Clk_divider|LessThan0~41                ; |Clk_divider|LessThan0~41                ; out0             ;
+; |Clk_divider|LessThan0~43                ; |Clk_divider|LessThan0~43                ; out0             ;
+; |Clk_divider|LessThan0~45                ; |Clk_divider|LessThan0~45                ; out0             ;
+; |Clk_divider|LessThan0~47                ; |Clk_divider|LessThan0~47                ; out0             ;
+; |Clk_divider|LessThan0~49                ; |Clk_divider|LessThan0~49                ; out0             ;
+; |Clk_divider|LessThan0~51                ; |Clk_divider|LessThan0~51                ; out0             ;
+; |Clk_divider|LessThan0~53                ; |Clk_divider|LessThan0~53                ; out0             ;
+; |Clk_divider|LessThan0~55                ; |Clk_divider|LessThan0~55                ; out0             ;
+; |Clk_divider|LessThan0~57                ; |Clk_divider|LessThan0~57                ; out0             ;
+; |Clk_divider|LessThan0~59                ; |Clk_divider|LessThan0~59                ; out0             ;
+; |Clk_divider|LessThan0~61                ; |Clk_divider|LessThan0~61                ; out0             ;
+; |Clk_divider|LessThan0~63                ; |Clk_divider|LessThan0~63                ; out0             ;
+; |Clk_divider|LessThan0~65                ; |Clk_divider|LessThan0~65                ; out0             ;
+; |Clk_divider|LessThan0~67                ; |Clk_divider|LessThan0~67                ; out0             ;
+; |Clk_divider|LessThan0~69                ; |Clk_divider|LessThan0~69                ; out0             ;
+; |Clk_divider|LessThan0~71                ; |Clk_divider|LessThan0~71                ; out0             ;
+; |Clk_divider|LessThan0~73                ; |Clk_divider|LessThan0~73                ; out0             ;
+; |Clk_divider|LessThan0~75                ; |Clk_divider|LessThan0~75                ; out0             ;
+; |Clk_divider|LessThan0~77                ; |Clk_divider|LessThan0~77                ; out0             ;
+; |Clk_divider|LessThan0~79                ; |Clk_divider|LessThan0~79                ; out0             ;
+; |Clk_divider|LessThan0~81                ; |Clk_divider|LessThan0~81                ; out0             ;
+; |Clk_divider|LessThan0~83                ; |Clk_divider|LessThan0~83                ; out0             ;
+; |Clk_divider|LessThan0~85                ; |Clk_divider|LessThan0~85                ; out0             ;
+; |Clk_divider|LessThan0~87                ; |Clk_divider|LessThan0~87                ; out0             ;
+; |Clk_divider|LessThan0~89                ; |Clk_divider|LessThan0~89                ; out0             ;
+; |Clk_divider|LessThan0~91                ; |Clk_divider|LessThan0~91                ; out0             ;
+; |Clk_divider|LessThan0~93                ; |Clk_divider|LessThan0~93                ; out0             ;
+; |Clk_divider|LessThan0~95                ; |Clk_divider|LessThan0~95                ; out0             ;
+; |Clk_divider|LessThan0~97                ; |Clk_divider|LessThan0~97                ; out0             ;
+; |Clk_divider|LessThan0~99                ; |Clk_divider|LessThan0~99                ; out0             ;
+; |Clk_divider|LessThan0~101               ; |Clk_divider|LessThan0~101               ; out0             ;
+; |Clk_divider|LessThan0~103               ; |Clk_divider|LessThan0~103               ; out0             ;
+; |Clk_divider|LessThan0~105               ; |Clk_divider|LessThan0~105               ; out0             ;
+; |Clk_divider|LessThan0~107               ; |Clk_divider|LessThan0~107               ; out0             ;
+; |Clk_divider|LessThan0~109               ; |Clk_divider|LessThan0~109               ; out0             ;
+; |Clk_divider|LessThan0~111               ; |Clk_divider|LessThan0~111               ; out0             ;
+; |Clk_divider|LessThan0~113               ; |Clk_divider|LessThan0~113               ; out0             ;
+; |Clk_divider|LessThan0~115               ; |Clk_divider|LessThan0~115               ; out0             ;
+; |Clk_divider|LessThan0~117               ; |Clk_divider|LessThan0~117               ; out0             ;
+; |Clk_divider|LessThan0~119               ; |Clk_divider|LessThan0~119               ; out0             ;
+; |Clk_divider|LessThan0~121               ; |Clk_divider|LessThan0~121               ; out0             ;
+; |Clk_divider|LessThan0~123               ; |Clk_divider|LessThan0~123               ; out0             ;
+; |Clk_divider|LessThan0~125               ; |Clk_divider|LessThan0~125               ; out0             ;
+; |Clk_divider|Add0~0                      ; |Clk_divider|Add0~0                      ; out0             ;
+; |Clk_divider|Add0~1                      ; |Clk_divider|Add0~1                      ; out0             ;
+; |Clk_divider|Add0~2                      ; |Clk_divider|Add0~2                      ; out0             ;
+; |Clk_divider|Add0~3                      ; |Clk_divider|Add0~3                      ; out0             ;
+; |Clk_divider|Add0~4                      ; |Clk_divider|Add0~4                      ; out0             ;
+; |Clk_divider|Add0~5                      ; |Clk_divider|Add0~5                      ; out0             ;
+; |Clk_divider|Add0~6                      ; |Clk_divider|Add0~6                      ; out0             ;
+; |Clk_divider|Add0~7                      ; |Clk_divider|Add0~7                      ; out0             ;
+; |Clk_divider|Add0~8                      ; |Clk_divider|Add0~8                      ; out0             ;
+; |Clk_divider|Add0~9                      ; |Clk_divider|Add0~9                      ; out0             ;
+; |Clk_divider|Add0~10                     ; |Clk_divider|Add0~10                     ; out0             ;
+; |Clk_divider|Add0~11                     ; |Clk_divider|Add0~11                     ; out0             ;
+; |Clk_divider|Add0~12                     ; |Clk_divider|Add0~12                     ; out0             ;
+; |Clk_divider|Add0~13                     ; |Clk_divider|Add0~13                     ; out0             ;
+; |Clk_divider|Add0~14                     ; |Clk_divider|Add0~14                     ; out0             ;
+; |Clk_divider|Add0~15                     ; |Clk_divider|Add0~15                     ; out0             ;
+; |Clk_divider|Add0~16                     ; |Clk_divider|Add0~16                     ; out0             ;
+; |Clk_divider|Add0~17                     ; |Clk_divider|Add0~17                     ; out0             ;
+; |Clk_divider|Add0~18                     ; |Clk_divider|Add0~18                     ; out0             ;
+; |Clk_divider|Add0~19                     ; |Clk_divider|Add0~19                     ; out0             ;
+; |Clk_divider|Add0~20                     ; |Clk_divider|Add0~20                     ; out0             ;
+; |Clk_divider|Add0~21                     ; |Clk_divider|Add0~21                     ; out0             ;
+; |Clk_divider|Add0~22                     ; |Clk_divider|Add0~22                     ; out0             ;
+; |Clk_divider|Add0~23                     ; |Clk_divider|Add0~23                     ; out0             ;
+; |Clk_divider|Add0~24                     ; |Clk_divider|Add0~24                     ; out0             ;
+; |Clk_divider|Add0~25                     ; |Clk_divider|Add0~25                     ; out0             ;
+; |Clk_divider|Add0~26                     ; |Clk_divider|Add0~26                     ; out0             ;
+; |Clk_divider|Add0~27                     ; |Clk_divider|Add0~27                     ; out0             ;
+; |Clk_divider|Add0~28                     ; |Clk_divider|Add0~28                     ; out0             ;
+; |Clk_divider|Add0~29                     ; |Clk_divider|Add0~29                     ; out0             ;
+; |Clk_divider|Add0~30                     ; |Clk_divider|Add0~30                     ; out0             ;
+; |Clk_divider|Add0~31                     ; |Clk_divider|Add0~31                     ; out0             ;
+; |Clk_divider|Add0~32                     ; |Clk_divider|Add0~32                     ; out0             ;
+; |Clk_divider|Add0~33                     ; |Clk_divider|Add0~33                     ; out0             ;
+; |Clk_divider|Add0~34                     ; |Clk_divider|Add0~34                     ; out0             ;
+; |Clk_divider|Add0~35                     ; |Clk_divider|Add0~35                     ; out0             ;
+; |Clk_divider|Add0~36                     ; |Clk_divider|Add0~36                     ; out0             ;
+; |Clk_divider|Add0~37                     ; |Clk_divider|Add0~37                     ; out0             ;
+; |Clk_divider|Add0~38                     ; |Clk_divider|Add0~38                     ; out0             ;
+; |Clk_divider|Add0~39                     ; |Clk_divider|Add0~39                     ; out0             ;
+; |Clk_divider|Add0~40                     ; |Clk_divider|Add0~40                     ; out0             ;
+; |Clk_divider|Add0~41                     ; |Clk_divider|Add0~41                     ; out0             ;
+; |Clk_divider|Add0~42                     ; |Clk_divider|Add0~42                     ; out0             ;
+; |Clk_divider|Add0~43                     ; |Clk_divider|Add0~43                     ; out0             ;
+; |Clk_divider|Add0~44                     ; |Clk_divider|Add0~44                     ; out0             ;
+; |Clk_divider|Add0~45                     ; |Clk_divider|Add0~45                     ; out0             ;
+; |Clk_divider|Add0~46                     ; |Clk_divider|Add0~46                     ; out0             ;
+; |Clk_divider|Add0~47                     ; |Clk_divider|Add0~47                     ; out0             ;
+; |Clk_divider|Add0~48                     ; |Clk_divider|Add0~48                     ; out0             ;
+; |Clk_divider|Add0~49                     ; |Clk_divider|Add0~49                     ; out0             ;
+; |Clk_divider|Add0~50                     ; |Clk_divider|Add0~50                     ; out0             ;
+; |Clk_divider|Add0~51                     ; |Clk_divider|Add0~51                     ; out0             ;
+; |Clk_divider|Add0~52                     ; |Clk_divider|Add0~52                     ; out0             ;
+; |Clk_divider|Add0~53                     ; |Clk_divider|Add0~53                     ; out0             ;
+; |Clk_divider|Add0~54                     ; |Clk_divider|Add0~54                     ; out0             ;
+; |Clk_divider|Add0~55                     ; |Clk_divider|Add0~55                     ; out0             ;
+; |Clk_divider|Add0~56                     ; |Clk_divider|Add0~56                     ; out0             ;
+; |Clk_divider|Add0~57                     ; |Clk_divider|Add0~57                     ; out0             ;
+; |Clk_divider|Add0~58                     ; |Clk_divider|Add0~58                     ; out0             ;
+; |Clk_divider|Add0~59                     ; |Clk_divider|Add0~59                     ; out0             ;
+; |Clk_divider|Add0~60                     ; |Clk_divider|Add0~60                     ; out0             ;
+; |Clk_divider|Add0~61                     ; |Clk_divider|Add0~61                     ; out0             ;
+; |Clk_divider|Add0~62                     ; |Clk_divider|Add0~62                     ; out0             ;
+; |Clk_divider|Add0~63                     ; |Clk_divider|Add0~63                     ; out0             ;
+; |Clk_divider|Add0~64                     ; |Clk_divider|Add0~64                     ; out0             ;
+; |Clk_divider|Add0~65                     ; |Clk_divider|Add0~65                     ; out0             ;
+; |Clk_divider|Add0~66                     ; |Clk_divider|Add0~66                     ; out0             ;
+; |Clk_divider|Add0~67                     ; |Clk_divider|Add0~67                     ; out0             ;
+; |Clk_divider|Add0~68                     ; |Clk_divider|Add0~68                     ; out0             ;
+; |Clk_divider|Add0~69                     ; |Clk_divider|Add0~69                     ; out0             ;
+; |Clk_divider|Add0~70                     ; |Clk_divider|Add0~70                     ; out0             ;
+; |Clk_divider|Add0~71                     ; |Clk_divider|Add0~71                     ; out0             ;
+; |Clk_divider|Add0~72                     ; |Clk_divider|Add0~72                     ; out0             ;
+; |Clk_divider|Add0~73                     ; |Clk_divider|Add0~73                     ; out0             ;
+; |Clk_divider|Add0~74                     ; |Clk_divider|Add0~74                     ; out0             ;
+; |Clk_divider|Add0~75                     ; |Clk_divider|Add0~75                     ; out0             ;
+; |Clk_divider|Add0~76                     ; |Clk_divider|Add0~76                     ; out0             ;
+; |Clk_divider|Add0~77                     ; |Clk_divider|Add0~77                     ; out0             ;
+; |Clk_divider|Add0~78                     ; |Clk_divider|Add0~78                     ; out0             ;
+; |Clk_divider|Add0~79                     ; |Clk_divider|Add0~79                     ; out0             ;
+; |Clk_divider|Add0~80                     ; |Clk_divider|Add0~80                     ; out0             ;
+; |Clk_divider|Add0~81                     ; |Clk_divider|Add0~81                     ; out0             ;
+; |Clk_divider|Add0~82                     ; |Clk_divider|Add0~82                     ; out0             ;
+; |Clk_divider|Add0~83                     ; |Clk_divider|Add0~83                     ; out0             ;
+; |Clk_divider|Add0~84                     ; |Clk_divider|Add0~84                     ; out0             ;
+; |Clk_divider|Add0~85                     ; |Clk_divider|Add0~85                     ; out0             ;
+; |Clk_divider|Add0~86                     ; |Clk_divider|Add0~86                     ; out0             ;
+; |Clk_divider|Add0~87                     ; |Clk_divider|Add0~87                     ; out0             ;
+; |Clk_divider|Add0~88                     ; |Clk_divider|Add0~88                     ; out0             ;
+; |Clk_divider|Add0~89                     ; |Clk_divider|Add0~89                     ; out0             ;
+; |Clk_divider|Add0~90                     ; |Clk_divider|Add0~90                     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~5      ; |Clk_divider|Counter:COUNTER|Add0~5      ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~6      ; |Clk_divider|Counter:COUNTER|Add0~6      ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~7      ; |Clk_divider|Counter:COUNTER|Add0~7      ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~8      ; |Clk_divider|Counter:COUNTER|Add0~8      ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~9      ; |Clk_divider|Counter:COUNTER|Add0~9      ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~10     ; |Clk_divider|Counter:COUNTER|Add0~10     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~11     ; |Clk_divider|Counter:COUNTER|Add0~11     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~12     ; |Clk_divider|Counter:COUNTER|Add0~12     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~13     ; |Clk_divider|Counter:COUNTER|Add0~13     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~14     ; |Clk_divider|Counter:COUNTER|Add0~14     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~15     ; |Clk_divider|Counter:COUNTER|Add0~15     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~16     ; |Clk_divider|Counter:COUNTER|Add0~16     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~17     ; |Clk_divider|Counter:COUNTER|Add0~17     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~18     ; |Clk_divider|Counter:COUNTER|Add0~18     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~19     ; |Clk_divider|Counter:COUNTER|Add0~19     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~20     ; |Clk_divider|Counter:COUNTER|Add0~20     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~21     ; |Clk_divider|Counter:COUNTER|Add0~21     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~22     ; |Clk_divider|Counter:COUNTER|Add0~22     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~23     ; |Clk_divider|Counter:COUNTER|Add0~23     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~24     ; |Clk_divider|Counter:COUNTER|Add0~24     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~25     ; |Clk_divider|Counter:COUNTER|Add0~25     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~26     ; |Clk_divider|Counter:COUNTER|Add0~26     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~27     ; |Clk_divider|Counter:COUNTER|Add0~27     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~28     ; |Clk_divider|Counter:COUNTER|Add0~28     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~29     ; |Clk_divider|Counter:COUNTER|Add0~29     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~30     ; |Clk_divider|Counter:COUNTER|Add0~30     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~31     ; |Clk_divider|Counter:COUNTER|Add0~31     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~32     ; |Clk_divider|Counter:COUNTER|Add0~32     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~33     ; |Clk_divider|Counter:COUNTER|Add0~33     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~34     ; |Clk_divider|Counter:COUNTER|Add0~34     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~35     ; |Clk_divider|Counter:COUNTER|Add0~35     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~36     ; |Clk_divider|Counter:COUNTER|Add0~36     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~37     ; |Clk_divider|Counter:COUNTER|Add0~37     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~38     ; |Clk_divider|Counter:COUNTER|Add0~38     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~39     ; |Clk_divider|Counter:COUNTER|Add0~39     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~40     ; |Clk_divider|Counter:COUNTER|Add0~40     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~41     ; |Clk_divider|Counter:COUNTER|Add0~41     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~42     ; |Clk_divider|Counter:COUNTER|Add0~42     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~43     ; |Clk_divider|Counter:COUNTER|Add0~43     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~44     ; |Clk_divider|Counter:COUNTER|Add0~44     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~45     ; |Clk_divider|Counter:COUNTER|Add0~45     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~46     ; |Clk_divider|Counter:COUNTER|Add0~46     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~47     ; |Clk_divider|Counter:COUNTER|Add0~47     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~48     ; |Clk_divider|Counter:COUNTER|Add0~48     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~49     ; |Clk_divider|Counter:COUNTER|Add0~49     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~50     ; |Clk_divider|Counter:COUNTER|Add0~50     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~51     ; |Clk_divider|Counter:COUNTER|Add0~51     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~52     ; |Clk_divider|Counter:COUNTER|Add0~52     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~53     ; |Clk_divider|Counter:COUNTER|Add0~53     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~54     ; |Clk_divider|Counter:COUNTER|Add0~54     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~55     ; |Clk_divider|Counter:COUNTER|Add0~55     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~56     ; |Clk_divider|Counter:COUNTER|Add0~56     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~57     ; |Clk_divider|Counter:COUNTER|Add0~57     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~58     ; |Clk_divider|Counter:COUNTER|Add0~58     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~59     ; |Clk_divider|Counter:COUNTER|Add0~59     ; out0             ;
+; |Clk_divider|Counter:COUNTER|Add0~60     ; |Clk_divider|Counter:COUNTER|Add0~60     ; out0             ;
+; |Clk_divider|Equal0~0                    ; |Clk_divider|Equal0~0                    ; out0             ;
++------------------------------------------+------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun May 28 22:54:35 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Clk_divider -c Clk_divider
+Info: Using vector source file "D:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab 1/xuan_tung_luu_30236798_Lab_1/sim/frequency_divider/Clk_divider.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of Clk_divider.vwf called Clk_divider.sim_ori.vwf has been created in the db folder
+Warning: Can't find signal in vector source file for input pin "|Clk_divider|Reset"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      22.79 %
+Info: Number of transitions in simulation is 5960
+Info: Vector file Clk_divider.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 157 megabytes
+    Info: Processing ended: Sun May 28 22:54:35 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

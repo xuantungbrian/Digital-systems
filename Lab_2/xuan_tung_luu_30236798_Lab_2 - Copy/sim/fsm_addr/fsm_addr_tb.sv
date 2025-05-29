@@ -1,0 +1,61 @@
+module fsm_addr_tb();
+	logic clk;
+	logic [7:0] kbd_received_ascii_code;
+	logic [22:0] addr;
+	logic stopp;
+
+	parameter character_A =8'h41;
+	parameter character_B =8'h42;
+	parameter character_C =8'h43;
+	parameter character_D =8'h44;
+	parameter character_E =8'h45;
+	parameter character_F =8'h46;
+	parameter character_G =8'h47;
+	parameter character_H =8'h48;
+	parameter character_I =8'h49;
+	parameter character_J =8'h4A;
+	parameter character_K =8'h4B;
+	parameter character_L =8'h4C;
+	parameter character_M =8'h4D;
+	parameter character_N =8'h4E;
+	parameter character_O =8'h4F;
+	parameter character_P =8'h50;
+	parameter character_Q =8'h51;
+	parameter character_R =8'h52;
+	parameter character_S =8'h53;
+	parameter character_T =8'h54;
+	parameter character_U =8'h55;
+	parameter character_V =8'h56;
+	parameter character_W =8'h57;
+	parameter character_X =8'h58;
+	parameter character_Y =8'h59;
+	parameter character_Z =8'h5A;
+
+	fsm_addr DUT(
+		.clk(clk), 
+		.kbd_received_ascii_code(kbd_received_ascii_code),
+		.addr(addr),
+		.stopp(stopp));
+
+	initial begin
+		clk = 1'b0; #5;
+		forever begin
+			clk = 1'b1; #5;
+			clk = 1'b0; #5;
+		end
+	end
+
+	initial begin
+		kbd_received_ascii_code = character_E;
+		#30;
+		kbd_received_ascii_code = character_D;
+		#30
+		kbd_received_ascii_code = character_E;
+		#30;
+		kbd_received_ascii_code = character_B;
+		#30;
+		kbd_received_ascii_code = character_F;
+		#60;
+		$stop;
+	end
+endmodule

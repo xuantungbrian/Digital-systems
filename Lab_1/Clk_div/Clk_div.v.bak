@@ -1,0 +1,25 @@
+module Clk_divider  (input logic inclk, Reset,
+							input logic [31:0] div_clk_count, 
+							output logic outclk, outclk_Not);
+	logic [31:0] counter, ncounter;
+	logic rst;
+	
+	always_ff @(posedge inclk)
+		if (rst) begin
+			counter <= 32'b0;
+			outclk <= 1'b1;
+			rst <= 1'b0;
+		end
+		else begin
+			counter <= ncounter;
+			if (counter == div_clk_count-32'b1) 
+				outclk <= ~outclk;
+		end
+	
+	always_comb
+		if (counter == div_clk_count-32'b1)
+			ncounter = 0;
+		else 
+			ncounter = counter + 32'b1;
+				
+endmodule

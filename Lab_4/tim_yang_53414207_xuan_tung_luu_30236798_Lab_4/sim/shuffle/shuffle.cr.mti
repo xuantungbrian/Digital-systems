@@ -1,0 +1,15 @@
+C:/Users/timol/Desktop/CPEN311Labs/Lab4/sim/shuffle/shuffle_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/timol/Desktop/CPEN311Labs/Lab4/sim/shuffle/shuffle_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shuffle_tb
+
+Top level modules:
+	shuffle_tb
+
+} {} {}} C:/Users/timol/Desktop/CPEN311Labs/Lab4/rtl/shuffle.sv {1 {vlog -work work -sv -stats=none C:/Users/timol/Desktop/CPEN311Labs/Lab4/rtl/shuffle.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shuffle
+
+Top level modules:
+	shuffle
+
+} {} {}}

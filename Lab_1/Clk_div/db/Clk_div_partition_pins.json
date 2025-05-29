@@ -1,0 +1,145 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "outclk",
+					"strict" : false
+				},
+				{
+					"name" : "inclk",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[24]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[30]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[13]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[20]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[9]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[10]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[14]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[15]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[3]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[4]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[5]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[25]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[26]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[31]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[28]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[29]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[18]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[19]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[6]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[7]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[8]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[11]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[12]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[21]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[23]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[0]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[1]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[2]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[22]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[27]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[16]",
+					"strict" : false
+				},
+				{
+					"name" : "div_clk_count[17]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

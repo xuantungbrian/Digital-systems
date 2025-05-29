@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_2/xuan_tung_luu_30236798_Lab_2/sim/fsm
+vfsm
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1685921584
+!i10b 1
+!s100 ^hdCFRO]nj5KA8dK;68=J1
+Ieg=TlXDhHfW9j[]MeJfTX3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 fsm_sv_unit
+S1
+R0
+w1685907290
+8D:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_2/xuan_tung_luu_30236798_Lab_2/rtl/fsm.sv
+FD:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_2/xuan_tung_luu_30236798_Lab_2/rtl/fsm.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1685921584.000000
+!s107 D:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_2/xuan_tung_luu_30236798_Lab_2/rtl/fsm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_2/xuan_tung_luu_30236798_Lab_2/rtl/fsm.sv|
+!i113 1
+Z6 o-work work -sv
+Z7 tCvgOpt 0
+vfsm_tb
+R1
+R2
+!i10b 1
+!s100 MA3e4g65E6hA4T^QX@H760
+I[F_;KRJWmL3h89YF^[V_z3
+R3
+!s105 fsm_tb_sv_unit
+S1
+R0
+w1685920320
+8D:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_2/xuan_tung_luu_30236798_Lab_2/sim/fsm/fsm_tb.sv
+FD:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_2/xuan_tung_luu_30236798_Lab_2/sim/fsm/fsm_tb.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_2/xuan_tung_luu_30236798_Lab_2/sim/fsm/fsm_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_2/xuan_tung_luu_30236798_Lab_2/sim/fsm/fsm_tb.sv|
+!i113 1
+R6
+R7

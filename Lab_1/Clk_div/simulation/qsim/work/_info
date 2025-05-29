@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab 1/Clk_div/simulation/qsim
+vClk_div
+Z1 !s110 1685148600
+!i10b 1
+!s100 ejXkZYlH2Q`8ObU7[mm:h3
+I5QElC6]3dz9gHl=6J^h170
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1685148597
+8Clk_div.vo
+FClk_div.vo
+L0 32
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1685148600.000000
+!s107 Clk_div.vo|
+!s90 -work|work|Clk_div.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@clk_div
+vClk_div_vlg_vec_tst
+R1
+!i10b 1
+!s100 IG<fbY@f>zhkP4FRl<;dn2
+Id`Zo2=K4k]jWNS?i]2?IE1
+R2
+R0
+w1685148596
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6
+n@clk_div_vlg_vec_tst

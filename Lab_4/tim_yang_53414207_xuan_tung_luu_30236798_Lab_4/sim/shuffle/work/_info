@@ -1,0 +1,106 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Quartus/Quartus_Prime
+vshuffle
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1687040616
+!i10b 1
+!s100 [an9T>Q:KUGndHf<Jfl9X0
+Ig=[5fE5H8JcdFWdnhleF:3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 shuffle_sv_unit
+S1
+Z3 dC:/Users/timol/Desktop/CPEN311Labs/Lab4/sim/shuffle
+w1686975469
+8C:/Users/timol/Desktop/CPEN311Labs/Lab4/rtl/shuffle.sv
+FC:/Users/timol/Desktop/CPEN311Labs/Lab4/rtl/shuffle.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1687040616.000000
+!s107 C:/Users/timol/Desktop/CPEN311Labs/Lab4/rtl/shuffle.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/timol/Desktop/CPEN311Labs/Lab4/rtl/shuffle.sv|
+!i113 1
+Z6 o-work work -sv
+Z7 tCvgOpt 0
+vshuffle_tb
+R0
+R1
+!i10b 1
+!s100 BC9D5_C7_<E[Beg0=EQQS0
+IFSn:@@8<E_70SFA3Vkb;I3
+R2
+Z8 !s105 shuffle_tb_sv_unit
+S1
+R3
+w1687040516
+Z9 8C:/Users/timol/Desktop/CPEN311Labs/Lab4/sim/shuffle/shuffle_tb.sv
+Z10 FC:/Users/timol/Desktop/CPEN311Labs/Lab4/sim/shuffle/shuffle_tb.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+Z11 !s107 C:/Users/timol/Desktop/CPEN311Labs/Lab4/sim/shuffle/shuffle_tb.sv|
+Z12 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/timol/Desktop/CPEN311Labs/Lab4/sim/shuffle/shuffle_tb.sv|
+!i113 1
+R6
+R7
+vswap
+R0
+!s110 1686894331
+!i10b 1
+!s100 5_ART;DM?F9OR@V7X2=8k1
+IDHSknDS6dnkHomGOaYgb?0
+R2
+!s105 swap_sv_unit
+S1
+dD:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_4/xuan_tung_luu_30236798_Lab_4/sim/swap
+w1686893646
+8D:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_4/xuan_tung_luu_30236798_Lab_4/rtl/swap.sv
+FD:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_4/xuan_tung_luu_30236798_Lab_4/rtl/swap.sv
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1686894331.000000
+!s107 D:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_4/xuan_tung_luu_30236798_Lab_4/rtl/swap.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_4/xuan_tung_luu_30236798_Lab_4/rtl/swap.sv|
+!i113 1
+R6
+R7
+vswap_tb
+R0
+!s110 1687039441
+!i10b 1
+!s100 haVnAjb[eX8@3NIXV1kKM1
+IUPZT5QD[LL@=m@joBRd;51
+R2
+R8
+S1
+R3
+w1686897983
+R9
+R10
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1687039441.000000
+R11
+R12
+!i113 1
+R6
+R7

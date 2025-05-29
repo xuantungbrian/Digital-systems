@@ -1,0 +1,20 @@
+|LED_light
+Clock_1Hz => LED[7]~reg0.CLK
+Clock_1Hz => LED[6]~reg0.CLK
+Clock_1Hz => LED[5]~reg0.CLK
+Clock_1Hz => LED[4]~reg0.CLK
+Clock_1Hz => LED[3]~reg0.CLK
+Clock_1Hz => LED[2]~reg0.CLK
+Clock_1Hz => LED[1]~reg0.CLK
+Clock_1Hz => LED[0]~reg0.CLK
+Clock_1Hz => direction.CLK
+LED[0] <= LED[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LED[1] <= LED[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LED[2] <= LED[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LED[3] <= LED[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LED[4] <= LED[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LED[5] <= LED[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LED[6] <= LED[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LED[7] <= LED[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

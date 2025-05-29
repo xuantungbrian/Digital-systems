@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Quartus/Quartus_Prime
+vmain_fsm
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1687153119
+!i10b 1
+!s100 ;98;RlO1>P3R?@VE]RmWG2
+I>Rmi`Ka0IJZlnCbYM9Of`2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 main_fsm_sv_unit
+S1
+Z3 dE:/CPEN311/311Labs/Lab4/sim/main_fsm
+w1687149560
+8E:/CPEN311/311Labs/Lab4/rtl/main_fsm.sv
+FE:/CPEN311/311Labs/Lab4/rtl/main_fsm.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1687153119.000000
+!s107 E:/CPEN311/311Labs/Lab4/rtl/main_fsm.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|E:/CPEN311/311Labs/Lab4/rtl/main_fsm.sv|
+!i113 1
+Z6 o-work work -sv
+Z7 tCvgOpt 0
+vmain_fsm_tb
+R0
+R1
+!i10b 1
+!s100 nQPB`og18LJc[EiLf;4aF1
+InnHZPAD`^2N7Yik6:[f[K0
+R2
+!s105 main_fsm_tb_sv_unit
+S1
+R3
+w1687153115
+8E:\CPEN311\311Labs\Lab4\sim\main_fsm\main_fsm_tb.sv
+FE:\CPEN311\311Labs\Lab4\sim\main_fsm\main_fsm_tb.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:\CPEN311\311Labs\Lab4\sim\main_fsm\main_fsm_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|E:\CPEN311\311Labs\Lab4\sim\main_fsm\main_fsm_tb.sv|
+!i113 1
+R6
+R7

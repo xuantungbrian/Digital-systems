@@ -1,0 +1,119 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/test
+vmain_DDS_tb
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z0 !s110 1687806680
+!i10b 1
+!s100 H_B`lZg;B`?z=g9N64Ud00
+I2gV6:OXYIDfA`XeKS?5z10
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 main_DDS_tb_sv_unit
+S1
+Z1 dE:/CPEN311/311Labs/tim_yang_53414207_xuan_tung_luu_30236798_Lab_5/sim/main_DDS
+w1687806677
+8E:/CPEN311/311Labs/tim_yang_53414207_xuan_tung_luu_30236798_Lab_5/sim/main_DDS/main_DDS_tb.sv
+FE:/CPEN311/311Labs/tim_yang_53414207_xuan_tung_luu_30236798_Lab_5/sim/main_DDS/main_DDS_tb.sv
+L0 1
+OV;L;10.5b;63
+r1
+!s85 0
+31
+Z2 !s108 1687806680.000000
+!s107 E:/CPEN311/311Labs/tim_yang_53414207_xuan_tung_luu_30236798_Lab_5/sim/main_DDS/main_DDS_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|E:/CPEN311/311Labs/tim_yang_53414207_xuan_tung_luu_30236798_Lab_5/sim/main_DDS/main_DDS_tb.sv|
+!i113 1
+o-work work -sv
+tCvgOpt 0
+nmain_@d@d@s_tb
+Esincos_lut
+Z3 w1687210628
+Z4 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z5 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R1
+Z8 8E:/CPEN311/311Labs/tim_yang_53414207_xuan_tung_luu_30236798_Lab_5/rtl/sincos_lut.vhd
+Z9 FE:/CPEN311/311Labs/tim_yang_53414207_xuan_tung_luu_30236798_Lab_5/rtl/sincos_lut.vhd
+l0
+L25
+VzLa`J^M^a7?H2FiU4Mhz;3
+!s100 7iWn1leeEa[=VGaM;5>8;2
+Z10 OV;C;10.5b;63
+32
+R0
+!i10b 1
+R2
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/CPEN311/311Labs/tim_yang_53414207_xuan_tung_luu_30236798_Lab_5/rtl/sincos_lut.vhd|
+Z12 !s107 E:/CPEN311/311Labs/tim_yang_53414207_xuan_tung_luu_30236798_Lab_5/rtl/sincos_lut.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Artl
+R4
+R5
+R6
+R7
+DEx4 work 10 sincos_lut 0 22 zLa`J^M^a7?H2FiU4Mhz;3
+l1080
+L40
+VT;M@L]f4SP:P3D5e7PiS]3
+!s100 52VA0:VH7KPd2ZVVHA_440
+R10
+32
+R0
+!i10b 1
+R2
+R11
+R12
+!i113 1
+R13
+R14
+Ewaveform_gen
+R3
+R4
+R6
+R7
+R1
+Z15 8E:\CPEN311\311Labs\tim_yang_53414207_xuan_tung_luu_30236798_Lab_5\rtl\waveform_gen.vhd
+Z16 FE:\CPEN311\311Labs\tim_yang_53414207_xuan_tung_luu_30236798_Lab_5\rtl\waveform_gen.vhd
+l0
+L25
+VoT0Qk<UT7HOJ7<PAd>7[S0
+!s100 O9<>HBaTeeZdZYXNFZ;ln1
+R10
+32
+R0
+!i10b 1
+R2
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:\CPEN311\311Labs\tim_yang_53414207_xuan_tung_luu_30236798_Lab_5\rtl\waveform_gen.vhd|
+Z18 !s107 E:\CPEN311\311Labs\tim_yang_53414207_xuan_tung_luu_30236798_Lab_5\rtl\waveform_gen.vhd|
+!i113 1
+R13
+R14
+Artl
+R4
+R6
+R7
+DEx4 work 12 waveform_gen 0 22 oT0Qk<UT7HOJ7<PAd>7[S0
+l69
+L48
+V8ogCfoTYno=lUBO]OcFl71
+!s100 bkd4_zF_Ql1MhU_RQhGRZ3
+R10
+32
+R0
+!i10b 1
+R2
+R17
+R18
+!i113 1
+R13
+R14

@@ -1,0 +1,611 @@
+Simulator report for note_selector
+Sun May 28 22:55:48 2023
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 10.2 ms      ;
+; Simulation Netlist Size     ; 359 nodes    ;
+; Simulation Coverage         ;      72.36 % ;
+; Total Number of Transitions ; 9857814      ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      72.36 % ;
+; Total nodes checked                                 ; 359          ;
+; Total output ports checked                          ; 351          ;
+; Total output ports with complete 1/0-value coverage ; 254          ;
+; Total output ports with no 1/0-value coverage       ; 97           ;
+; Total output ports with no 1-value coverage         ; 97           ;
+; Total output ports with no 0-value coverage         ; 97           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                          ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; Node Name                                                       ; Output Port Name                                                ; Output Port Type ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; |note_selector|WideOr0                                          ; |note_selector|WideOr0                                          ; out0             ;
+; |note_selector|WideOr1                                          ; |note_selector|WideOr1                                          ; out0             ;
+; |note_selector|WideOr2                                          ; |note_selector|WideOr2                                          ; out0             ;
+; |note_selector|WideOr3                                          ; |note_selector|WideOr3                                          ; out0             ;
+; |note_selector|WideOr4                                          ; |note_selector|WideOr4                                          ; out0             ;
+; |note_selector|WideOr5                                          ; |note_selector|WideOr5                                          ; out0             ;
+; |note_selector|WideOr6                                          ; |note_selector|WideOr6                                          ; out0             ;
+; |note_selector|sel_count~0                                      ; |note_selector|sel_count~0                                      ; out0             ;
+; |note_selector|sel_count[2]                                     ; |note_selector|sel_count[2]                                     ; out0             ;
+; |note_selector|sel_count~2                                      ; |note_selector|sel_count~2                                      ; out0             ;
+; |note_selector|WideOr7                                          ; |note_selector|WideOr7                                          ; out0             ;
+; |note_selector|sel_note_name~0                                  ; |note_selector|sel_note_name~0                                  ; out0             ;
+; |note_selector|sel_note_name~1                                  ; |note_selector|sel_note_name~1                                  ; out0             ;
+; |note_selector|WideOr8                                          ; |note_selector|WideOr8                                          ; out0             ;
+; |note_selector|sel_note_name~2                                  ; |note_selector|sel_note_name~2                                  ; out0             ;
+; |note_selector|WideOr9                                          ; |note_selector|WideOr9                                          ; out0             ;
+; |note_selector|WideOr10                                         ; |note_selector|WideOr10                                         ; out0             ;
+; |note_selector|sel_note_name~3                                  ; |note_selector|sel_note_name~3                                  ; out0             ;
+; |note_selector|sel_note_name~4                                  ; |note_selector|sel_note_name~4                                  ; out0             ;
+; |note_selector|CLK_50M                                          ; |note_selector|CLK_50M                                          ; out              ;
+; |note_selector|SW[1]                                            ; |note_selector|SW[1]                                            ; out              ;
+; |note_selector|SW[2]                                            ; |note_selector|SW[2]                                            ; out              ;
+; |note_selector|SW[3]                                            ; |note_selector|SW[3]                                            ; out              ;
+; |note_selector|sel_note                                         ; |note_selector|sel_note                                         ; pin_out          ;
+; |note_selector|sel_note_name[0]                                 ; |note_selector|sel_note_name[0]                                 ; pin_out          ;
+; |note_selector|sel_note_name[1]                                 ; |note_selector|sel_note_name[1]                                 ; pin_out          ;
+; |note_selector|sel_note_name[2]                                 ; |note_selector|sel_note_name[2]                                 ; pin_out          ;
+; |note_selector|sel_note_name[3]                                 ; |note_selector|sel_note_name[3]                                 ; pin_out          ;
+; |note_selector|sel_note_name[4]                                 ; |note_selector|sel_note_name[4]                                 ; pin_out          ;
+; |note_selector|sel_note_name[6]                                 ; |note_selector|sel_note_name[6]                                 ; pin_out          ;
+; |note_selector|sel_note_name[8]                                 ; |note_selector|sel_note_name[8]                                 ; pin_out          ;
+; |note_selector|sel_note_name[9]                                 ; |note_selector|sel_note_name[9]                                 ; pin_out          ;
+; |note_selector|sel_note_name[10]                                ; |note_selector|sel_note_name[10]                                ; pin_out          ;
+; |note_selector|sel_note_name[11]                                ; |note_selector|sel_note_name[11]                                ; pin_out          ;
+; |note_selector|sel_note_name[12]                                ; |note_selector|sel_note_name[12]                                ; pin_out          ;
+; |note_selector|sel_note_name[13]                                ; |note_selector|sel_note_name[13]                                ; pin_out          ;
+; |note_selector|sel_note_name[16]                                ; |note_selector|sel_note_name[16]                                ; pin_out          ;
+; |note_selector|sel_note_name[17]                                ; |note_selector|sel_note_name[17]                                ; pin_out          ;
+; |note_selector|sel_note_name[18]                                ; |note_selector|sel_note_name[18]                                ; pin_out          ;
+; |note_selector|sel_note_name[20]                                ; |note_selector|sel_note_name[20]                                ; pin_out          ;
+; |note_selector|sel_note_name[22]                                ; |note_selector|sel_note_name[22]                                ; pin_out          ;
+; |note_selector|Clk_divider:Gen_note|rst                         ; |note_selector|Clk_divider:Gen_note|rst                         ; regout           ;
+; |note_selector|Clk_divider:Gen_note|outclk~0                    ; |note_selector|Clk_divider:Gen_note|outclk~0                    ; out              ;
+; |note_selector|Clk_divider:Gen_note|outclk                      ; |note_selector|Clk_divider:Gen_note|outclk                      ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[15] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[15] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[14] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[14] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[13] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[13] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[12] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[12] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[11] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[11] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[10] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[10] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[9]  ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[9]  ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[8]  ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[8]  ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[7]  ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[7]  ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[6]  ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[6]  ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[5]  ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[5]  ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[4]  ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[4]  ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[3]  ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[3]  ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[2]  ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[2]  ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[1]  ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[1]  ; regout           ;
+; |note_selector|Decoder0~0                                       ; |note_selector|Decoder0~0                                       ; out0             ;
+; |note_selector|Decoder0~1                                       ; |note_selector|Decoder0~1                                       ; out0             ;
+; |note_selector|Decoder0~2                                       ; |note_selector|Decoder0~2                                       ; out0             ;
+; |note_selector|Decoder1~0                                       ; |note_selector|Decoder1~0                                       ; out0             ;
+; |note_selector|Decoder1~1                                       ; |note_selector|Decoder1~1                                       ; out0             ;
+; |note_selector|Decoder1~2                                       ; |note_selector|Decoder1~2                                       ; out0             ;
+; |note_selector|Decoder1~3                                       ; |note_selector|Decoder1~3                                       ; out0             ;
+; |note_selector|Decoder2~0                                       ; |note_selector|Decoder2~0                                       ; out0             ;
+; |note_selector|Decoder2~1                                       ; |note_selector|Decoder2~1                                       ; out0             ;
+; |note_selector|Decoder2~2                                       ; |note_selector|Decoder2~2                                       ; out0             ;
+; |note_selector|Decoder3~0                                       ; |note_selector|Decoder3~0                                       ; out0             ;
+; |note_selector|Decoder3~1                                       ; |note_selector|Decoder3~1                                       ; out0             ;
+; |note_selector|Decoder3~2                                       ; |note_selector|Decoder3~2                                       ; out0             ;
+; |note_selector|Decoder4~0                                       ; |note_selector|Decoder4~0                                       ; out0             ;
+; |note_selector|Decoder4~1                                       ; |note_selector|Decoder4~1                                       ; out0             ;
+; |note_selector|Decoder4~2                                       ; |note_selector|Decoder4~2                                       ; out0             ;
+; |note_selector|Decoder5~0                                       ; |note_selector|Decoder5~0                                       ; out0             ;
+; |note_selector|Decoder6~0                                       ; |note_selector|Decoder6~0                                       ; out0             ;
+; |note_selector|Decoder6~1                                       ; |note_selector|Decoder6~1                                       ; out0             ;
+; |note_selector|Decoder6~2                                       ; |note_selector|Decoder6~2                                       ; out0             ;
+; |note_selector|Decoder7~0                                       ; |note_selector|Decoder7~0                                       ; out0             ;
+; |note_selector|Decoder7~1                                       ; |note_selector|Decoder7~1                                       ; out0             ;
+; |note_selector|Decoder7~2                                       ; |note_selector|Decoder7~2                                       ; out0             ;
+; |note_selector|Decoder8~0                                       ; |note_selector|Decoder8~0                                       ; out0             ;
+; |note_selector|Decoder8~1                                       ; |note_selector|Decoder8~1                                       ; out0             ;
+; |note_selector|Decoder9~0                                       ; |note_selector|Decoder9~0                                       ; out0             ;
+; |note_selector|Decoder10~0                                      ; |note_selector|Decoder10~0                                      ; out0             ;
+; |note_selector|Decoder11~0                                      ; |note_selector|Decoder11~0                                      ; out0             ;
+; |note_selector|Decoder11~1                                      ; |note_selector|Decoder11~1                                      ; out0             ;
+; |note_selector|Decoder12~0                                      ; |note_selector|Decoder12~0                                      ; out0             ;
+; |note_selector|Decoder12~1                                      ; |note_selector|Decoder12~1                                      ; out0             ;
+; |note_selector|Decoder13~0                                      ; |note_selector|Decoder13~0                                      ; out0             ;
+; |note_selector|Decoder13~1                                      ; |note_selector|Decoder13~1                                      ; out0             ;
+; |note_selector|Decoder13~2                                      ; |note_selector|Decoder13~2                                      ; out0             ;
+; |note_selector|Decoder13~3                                      ; |note_selector|Decoder13~3                                      ; out0             ;
+; |note_selector|Decoder13~4                                      ; |note_selector|Decoder13~4                                      ; out0             ;
+; |note_selector|Decoder13~5                                      ; |note_selector|Decoder13~5                                      ; out0             ;
+; |note_selector|Decoder13~6                                      ; |note_selector|Decoder13~6                                      ; out0             ;
+; |note_selector|Decoder13~7                                      ; |note_selector|Decoder13~7                                      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~0                 ; |note_selector|Clk_divider:Gen_note|LessThan0~0                 ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~1                 ; |note_selector|Clk_divider:Gen_note|LessThan0~1                 ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~2                 ; |note_selector|Clk_divider:Gen_note|LessThan0~2                 ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~3                 ; |note_selector|Clk_divider:Gen_note|LessThan0~3                 ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~4                 ; |note_selector|Clk_divider:Gen_note|LessThan0~4                 ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~5                 ; |note_selector|Clk_divider:Gen_note|LessThan0~5                 ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~6                 ; |note_selector|Clk_divider:Gen_note|LessThan0~6                 ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~7                 ; |note_selector|Clk_divider:Gen_note|LessThan0~7                 ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~8                 ; |note_selector|Clk_divider:Gen_note|LessThan0~8                 ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~9                 ; |note_selector|Clk_divider:Gen_note|LessThan0~9                 ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~10                ; |note_selector|Clk_divider:Gen_note|LessThan0~10                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~11                ; |note_selector|Clk_divider:Gen_note|LessThan0~11                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~12                ; |note_selector|Clk_divider:Gen_note|LessThan0~12                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~13                ; |note_selector|Clk_divider:Gen_note|LessThan0~13                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~14                ; |note_selector|Clk_divider:Gen_note|LessThan0~14                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~15                ; |note_selector|Clk_divider:Gen_note|LessThan0~15                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~16                ; |note_selector|Clk_divider:Gen_note|LessThan0~16                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~17                ; |note_selector|Clk_divider:Gen_note|LessThan0~17                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~18                ; |note_selector|Clk_divider:Gen_note|LessThan0~18                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~19                ; |note_selector|Clk_divider:Gen_note|LessThan0~19                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~20                ; |note_selector|Clk_divider:Gen_note|LessThan0~20                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~21                ; |note_selector|Clk_divider:Gen_note|LessThan0~21                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~22                ; |note_selector|Clk_divider:Gen_note|LessThan0~22                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~23                ; |note_selector|Clk_divider:Gen_note|LessThan0~23                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~24                ; |note_selector|Clk_divider:Gen_note|LessThan0~24                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~25                ; |note_selector|Clk_divider:Gen_note|LessThan0~25                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~26                ; |note_selector|Clk_divider:Gen_note|LessThan0~26                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~27                ; |note_selector|Clk_divider:Gen_note|LessThan0~27                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~28                ; |note_selector|Clk_divider:Gen_note|LessThan0~28                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~29                ; |note_selector|Clk_divider:Gen_note|LessThan0~29                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~30                ; |note_selector|Clk_divider:Gen_note|LessThan0~30                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~31                ; |note_selector|Clk_divider:Gen_note|LessThan0~31                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~32                ; |note_selector|Clk_divider:Gen_note|LessThan0~32                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~33                ; |note_selector|Clk_divider:Gen_note|LessThan0~33                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~34                ; |note_selector|Clk_divider:Gen_note|LessThan0~34                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~35                ; |note_selector|Clk_divider:Gen_note|LessThan0~35                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~36                ; |note_selector|Clk_divider:Gen_note|LessThan0~36                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~37                ; |note_selector|Clk_divider:Gen_note|LessThan0~37                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~38                ; |note_selector|Clk_divider:Gen_note|LessThan0~38                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~39                ; |note_selector|Clk_divider:Gen_note|LessThan0~39                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~40                ; |note_selector|Clk_divider:Gen_note|LessThan0~40                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~41                ; |note_selector|Clk_divider:Gen_note|LessThan0~41                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~42                ; |note_selector|Clk_divider:Gen_note|LessThan0~42                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~43                ; |note_selector|Clk_divider:Gen_note|LessThan0~43                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~44                ; |note_selector|Clk_divider:Gen_note|LessThan0~44                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~45                ; |note_selector|Clk_divider:Gen_note|LessThan0~45                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~46                ; |note_selector|Clk_divider:Gen_note|LessThan0~46                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~47                ; |note_selector|Clk_divider:Gen_note|LessThan0~47                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~48                ; |note_selector|Clk_divider:Gen_note|LessThan0~48                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~49                ; |note_selector|Clk_divider:Gen_note|LessThan0~49                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~50                ; |note_selector|Clk_divider:Gen_note|LessThan0~50                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~51                ; |note_selector|Clk_divider:Gen_note|LessThan0~51                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~52                ; |note_selector|Clk_divider:Gen_note|LessThan0~52                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~53                ; |note_selector|Clk_divider:Gen_note|LessThan0~53                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~54                ; |note_selector|Clk_divider:Gen_note|LessThan0~54                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~55                ; |note_selector|Clk_divider:Gen_note|LessThan0~55                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~56                ; |note_selector|Clk_divider:Gen_note|LessThan0~56                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~57                ; |note_selector|Clk_divider:Gen_note|LessThan0~57                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~58                ; |note_selector|Clk_divider:Gen_note|LessThan0~58                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~60                ; |note_selector|Clk_divider:Gen_note|LessThan0~60                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~61                ; |note_selector|Clk_divider:Gen_note|LessThan0~61                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~62                ; |note_selector|Clk_divider:Gen_note|LessThan0~62                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~64                ; |note_selector|Clk_divider:Gen_note|LessThan0~64                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~66                ; |note_selector|Clk_divider:Gen_note|LessThan0~66                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~68                ; |note_selector|Clk_divider:Gen_note|LessThan0~68                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~70                ; |note_selector|Clk_divider:Gen_note|LessThan0~70                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~72                ; |note_selector|Clk_divider:Gen_note|LessThan0~72                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~74                ; |note_selector|Clk_divider:Gen_note|LessThan0~74                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~76                ; |note_selector|Clk_divider:Gen_note|LessThan0~76                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~78                ; |note_selector|Clk_divider:Gen_note|LessThan0~78                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~80                ; |note_selector|Clk_divider:Gen_note|LessThan0~80                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~82                ; |note_selector|Clk_divider:Gen_note|LessThan0~82                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~84                ; |note_selector|Clk_divider:Gen_note|LessThan0~84                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~86                ; |note_selector|Clk_divider:Gen_note|LessThan0~86                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~88                ; |note_selector|Clk_divider:Gen_note|LessThan0~88                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~90                ; |note_selector|Clk_divider:Gen_note|LessThan0~90                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~92                ; |note_selector|Clk_divider:Gen_note|LessThan0~92                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~94                ; |note_selector|Clk_divider:Gen_note|LessThan0~94                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~96                ; |note_selector|Clk_divider:Gen_note|LessThan0~96                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~98                ; |note_selector|Clk_divider:Gen_note|LessThan0~98                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~100               ; |note_selector|Clk_divider:Gen_note|LessThan0~100               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~102               ; |note_selector|Clk_divider:Gen_note|LessThan0~102               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~104               ; |note_selector|Clk_divider:Gen_note|LessThan0~104               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~106               ; |note_selector|Clk_divider:Gen_note|LessThan0~106               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~108               ; |note_selector|Clk_divider:Gen_note|LessThan0~108               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~110               ; |note_selector|Clk_divider:Gen_note|LessThan0~110               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~112               ; |note_selector|Clk_divider:Gen_note|LessThan0~112               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~114               ; |note_selector|Clk_divider:Gen_note|LessThan0~114               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~116               ; |note_selector|Clk_divider:Gen_note|LessThan0~116               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~118               ; |note_selector|Clk_divider:Gen_note|LessThan0~118               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~120               ; |note_selector|Clk_divider:Gen_note|LessThan0~120               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~122               ; |note_selector|Clk_divider:Gen_note|LessThan0~122               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~124               ; |note_selector|Clk_divider:Gen_note|LessThan0~124               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~126               ; |note_selector|Clk_divider:Gen_note|LessThan0~126               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~0                      ; |note_selector|Clk_divider:Gen_note|Add0~0                      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~1                      ; |note_selector|Clk_divider:Gen_note|Add0~1                      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~2                      ; |note_selector|Clk_divider:Gen_note|Add0~2                      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~3                      ; |note_selector|Clk_divider:Gen_note|Add0~3                      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~4                      ; |note_selector|Clk_divider:Gen_note|Add0~4                      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~5                      ; |note_selector|Clk_divider:Gen_note|Add0~5                      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~6                      ; |note_selector|Clk_divider:Gen_note|Add0~6                      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~7                      ; |note_selector|Clk_divider:Gen_note|Add0~7                      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~8                      ; |note_selector|Clk_divider:Gen_note|Add0~8                      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~9                      ; |note_selector|Clk_divider:Gen_note|Add0~9                      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~11                     ; |note_selector|Clk_divider:Gen_note|Add0~11                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~12                     ; |note_selector|Clk_divider:Gen_note|Add0~12                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~14                     ; |note_selector|Clk_divider:Gen_note|Add0~14                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~15                     ; |note_selector|Clk_divider:Gen_note|Add0~15                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~17                     ; |note_selector|Clk_divider:Gen_note|Add0~17                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~18                     ; |note_selector|Clk_divider:Gen_note|Add0~18                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~20                     ; |note_selector|Clk_divider:Gen_note|Add0~20                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~21                     ; |note_selector|Clk_divider:Gen_note|Add0~21                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~23                     ; |note_selector|Clk_divider:Gen_note|Add0~23                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~24                     ; |note_selector|Clk_divider:Gen_note|Add0~24                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~26                     ; |note_selector|Clk_divider:Gen_note|Add0~26                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~27                     ; |note_selector|Clk_divider:Gen_note|Add0~27                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~29                     ; |note_selector|Clk_divider:Gen_note|Add0~29                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~30                     ; |note_selector|Clk_divider:Gen_note|Add0~30                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~32                     ; |note_selector|Clk_divider:Gen_note|Add0~32                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~33                     ; |note_selector|Clk_divider:Gen_note|Add0~33                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~35                     ; |note_selector|Clk_divider:Gen_note|Add0~35                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~36                     ; |note_selector|Clk_divider:Gen_note|Add0~36                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~38                     ; |note_selector|Clk_divider:Gen_note|Add0~38                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~39                     ; |note_selector|Clk_divider:Gen_note|Add0~39                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~41                     ; |note_selector|Clk_divider:Gen_note|Add0~41                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~0      ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~0      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~1      ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~1      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~2      ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~2      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~3      ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~3      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~4      ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~4      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~5      ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~5      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~6      ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~6      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~7      ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~7      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~8      ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~8      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~9      ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~9      ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~10     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~10     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~11     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~11     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~12     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~12     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~13     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~13     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~14     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~14     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~15     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~15     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~16     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~16     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~17     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~17     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~18     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~18     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~19     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~19     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~20     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~20     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~21     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~21     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~22     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~22     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~23     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~23     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~24     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~24     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~25     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~25     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~26     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~26     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~27     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~27     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~28     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~28     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~29     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~29     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~30     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~30     ; out0             ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                             ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; Node Name                                                       ; Output Port Name                                                ; Output Port Type ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; |note_selector|sel_note_name[5]                                 ; |note_selector|sel_note_name[5]                                 ; pin_out          ;
+; |note_selector|sel_note_name[7]                                 ; |note_selector|sel_note_name[7]                                 ; pin_out          ;
+; |note_selector|sel_note_name[14]                                ; |note_selector|sel_note_name[14]                                ; pin_out          ;
+; |note_selector|sel_note_name[15]                                ; |note_selector|sel_note_name[15]                                ; pin_out          ;
+; |note_selector|sel_note_name[19]                                ; |note_selector|sel_note_name[19]                                ; pin_out          ;
+; |note_selector|sel_note_name[21]                                ; |note_selector|sel_note_name[21]                                ; pin_out          ;
+; |note_selector|sel_note_name[23]                                ; |note_selector|sel_note_name[23]                                ; pin_out          ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[31] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[31] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[30] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[30] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[29] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[29] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[28] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[28] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[27] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[27] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[26] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[26] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[25] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[25] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[24] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[24] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[23] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[23] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[22] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[22] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[21] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[21] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[20] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[20] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[19] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[19] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[18] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[18] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[17] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[17] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[16] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[16] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~59                ; |note_selector|Clk_divider:Gen_note|LessThan0~59                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~63                ; |note_selector|Clk_divider:Gen_note|LessThan0~63                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~65                ; |note_selector|Clk_divider:Gen_note|LessThan0~65                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~67                ; |note_selector|Clk_divider:Gen_note|LessThan0~67                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~69                ; |note_selector|Clk_divider:Gen_note|LessThan0~69                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~71                ; |note_selector|Clk_divider:Gen_note|LessThan0~71                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~73                ; |note_selector|Clk_divider:Gen_note|LessThan0~73                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~75                ; |note_selector|Clk_divider:Gen_note|LessThan0~75                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~77                ; |note_selector|Clk_divider:Gen_note|LessThan0~77                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~79                ; |note_selector|Clk_divider:Gen_note|LessThan0~79                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~81                ; |note_selector|Clk_divider:Gen_note|LessThan0~81                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~83                ; |note_selector|Clk_divider:Gen_note|LessThan0~83                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~85                ; |note_selector|Clk_divider:Gen_note|LessThan0~85                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~87                ; |note_selector|Clk_divider:Gen_note|LessThan0~87                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~89                ; |note_selector|Clk_divider:Gen_note|LessThan0~89                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~91                ; |note_selector|Clk_divider:Gen_note|LessThan0~91                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~93                ; |note_selector|Clk_divider:Gen_note|LessThan0~93                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~95                ; |note_selector|Clk_divider:Gen_note|LessThan0~95                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~97                ; |note_selector|Clk_divider:Gen_note|LessThan0~97                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~99                ; |note_selector|Clk_divider:Gen_note|LessThan0~99                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~101               ; |note_selector|Clk_divider:Gen_note|LessThan0~101               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~103               ; |note_selector|Clk_divider:Gen_note|LessThan0~103               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~105               ; |note_selector|Clk_divider:Gen_note|LessThan0~105               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~107               ; |note_selector|Clk_divider:Gen_note|LessThan0~107               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~109               ; |note_selector|Clk_divider:Gen_note|LessThan0~109               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~111               ; |note_selector|Clk_divider:Gen_note|LessThan0~111               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~113               ; |note_selector|Clk_divider:Gen_note|LessThan0~113               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~115               ; |note_selector|Clk_divider:Gen_note|LessThan0~115               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~117               ; |note_selector|Clk_divider:Gen_note|LessThan0~117               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~119               ; |note_selector|Clk_divider:Gen_note|LessThan0~119               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~121               ; |note_selector|Clk_divider:Gen_note|LessThan0~121               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~123               ; |note_selector|Clk_divider:Gen_note|LessThan0~123               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~125               ; |note_selector|Clk_divider:Gen_note|LessThan0~125               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~10                     ; |note_selector|Clk_divider:Gen_note|Add0~10                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~13                     ; |note_selector|Clk_divider:Gen_note|Add0~13                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~16                     ; |note_selector|Clk_divider:Gen_note|Add0~16                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~19                     ; |note_selector|Clk_divider:Gen_note|Add0~19                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~22                     ; |note_selector|Clk_divider:Gen_note|Add0~22                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~25                     ; |note_selector|Clk_divider:Gen_note|Add0~25                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~28                     ; |note_selector|Clk_divider:Gen_note|Add0~28                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~31                     ; |note_selector|Clk_divider:Gen_note|Add0~31                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~34                     ; |note_selector|Clk_divider:Gen_note|Add0~34                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~37                     ; |note_selector|Clk_divider:Gen_note|Add0~37                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~40                     ; |note_selector|Clk_divider:Gen_note|Add0~40                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~31     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~31     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~32     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~32     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~33     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~33     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~34     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~34     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~35     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~35     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~36     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~36     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~37     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~37     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~38     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~38     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~39     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~39     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~40     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~40     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~41     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~41     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~42     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~42     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~43     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~43     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~44     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~44     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~45     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~45     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~46     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~46     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~47     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~47     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~48     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~48     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~49     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~49     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~50     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~50     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~51     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~51     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~52     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~52     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~53     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~53     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~54     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~54     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~55     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~55     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~56     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~56     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~57     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~57     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~58     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~58     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~59     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~59     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~60     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~60     ; out0             ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                             ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; Node Name                                                       ; Output Port Name                                                ; Output Port Type ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; |note_selector|sel_note_name[5]                                 ; |note_selector|sel_note_name[5]                                 ; pin_out          ;
+; |note_selector|sel_note_name[7]                                 ; |note_selector|sel_note_name[7]                                 ; pin_out          ;
+; |note_selector|sel_note_name[14]                                ; |note_selector|sel_note_name[14]                                ; pin_out          ;
+; |note_selector|sel_note_name[15]                                ; |note_selector|sel_note_name[15]                                ; pin_out          ;
+; |note_selector|sel_note_name[19]                                ; |note_selector|sel_note_name[19]                                ; pin_out          ;
+; |note_selector|sel_note_name[21]                                ; |note_selector|sel_note_name[21]                                ; pin_out          ;
+; |note_selector|sel_note_name[23]                                ; |note_selector|sel_note_name[23]                                ; pin_out          ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[31] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[31] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[30] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[30] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[29] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[29] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[28] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[28] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[27] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[27] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[26] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[26] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[25] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[25] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[24] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[24] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[23] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[23] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[22] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[22] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[21] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[21] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[20] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[20] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[19] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[19] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[18] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[18] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[17] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[17] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[16] ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|counter[16] ; regout           ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~59                ; |note_selector|Clk_divider:Gen_note|LessThan0~59                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~63                ; |note_selector|Clk_divider:Gen_note|LessThan0~63                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~65                ; |note_selector|Clk_divider:Gen_note|LessThan0~65                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~67                ; |note_selector|Clk_divider:Gen_note|LessThan0~67                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~69                ; |note_selector|Clk_divider:Gen_note|LessThan0~69                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~71                ; |note_selector|Clk_divider:Gen_note|LessThan0~71                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~73                ; |note_selector|Clk_divider:Gen_note|LessThan0~73                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~75                ; |note_selector|Clk_divider:Gen_note|LessThan0~75                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~77                ; |note_selector|Clk_divider:Gen_note|LessThan0~77                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~79                ; |note_selector|Clk_divider:Gen_note|LessThan0~79                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~81                ; |note_selector|Clk_divider:Gen_note|LessThan0~81                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~83                ; |note_selector|Clk_divider:Gen_note|LessThan0~83                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~85                ; |note_selector|Clk_divider:Gen_note|LessThan0~85                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~87                ; |note_selector|Clk_divider:Gen_note|LessThan0~87                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~89                ; |note_selector|Clk_divider:Gen_note|LessThan0~89                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~91                ; |note_selector|Clk_divider:Gen_note|LessThan0~91                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~93                ; |note_selector|Clk_divider:Gen_note|LessThan0~93                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~95                ; |note_selector|Clk_divider:Gen_note|LessThan0~95                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~97                ; |note_selector|Clk_divider:Gen_note|LessThan0~97                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~99                ; |note_selector|Clk_divider:Gen_note|LessThan0~99                ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~101               ; |note_selector|Clk_divider:Gen_note|LessThan0~101               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~103               ; |note_selector|Clk_divider:Gen_note|LessThan0~103               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~105               ; |note_selector|Clk_divider:Gen_note|LessThan0~105               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~107               ; |note_selector|Clk_divider:Gen_note|LessThan0~107               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~109               ; |note_selector|Clk_divider:Gen_note|LessThan0~109               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~111               ; |note_selector|Clk_divider:Gen_note|LessThan0~111               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~113               ; |note_selector|Clk_divider:Gen_note|LessThan0~113               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~115               ; |note_selector|Clk_divider:Gen_note|LessThan0~115               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~117               ; |note_selector|Clk_divider:Gen_note|LessThan0~117               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~119               ; |note_selector|Clk_divider:Gen_note|LessThan0~119               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~121               ; |note_selector|Clk_divider:Gen_note|LessThan0~121               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~123               ; |note_selector|Clk_divider:Gen_note|LessThan0~123               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|LessThan0~125               ; |note_selector|Clk_divider:Gen_note|LessThan0~125               ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~10                     ; |note_selector|Clk_divider:Gen_note|Add0~10                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~13                     ; |note_selector|Clk_divider:Gen_note|Add0~13                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~16                     ; |note_selector|Clk_divider:Gen_note|Add0~16                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~19                     ; |note_selector|Clk_divider:Gen_note|Add0~19                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~22                     ; |note_selector|Clk_divider:Gen_note|Add0~22                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~25                     ; |note_selector|Clk_divider:Gen_note|Add0~25                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~28                     ; |note_selector|Clk_divider:Gen_note|Add0~28                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~31                     ; |note_selector|Clk_divider:Gen_note|Add0~31                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~34                     ; |note_selector|Clk_divider:Gen_note|Add0~34                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~37                     ; |note_selector|Clk_divider:Gen_note|Add0~37                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Add0~40                     ; |note_selector|Clk_divider:Gen_note|Add0~40                     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~31     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~31     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~32     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~32     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~33     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~33     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~34     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~34     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~35     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~35     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~36     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~36     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~37     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~37     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~38     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~38     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~39     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~39     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~40     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~40     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~41     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~41     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~42     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~42     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~43     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~43     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~44     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~44     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~45     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~45     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~46     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~46     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~47     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~47     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~48     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~48     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~49     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~49     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~50     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~50     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~51     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~51     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~52     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~52     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~53     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~53     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~54     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~54     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~55     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~55     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~56     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~56     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~57     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~57     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~58     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~58     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~59     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~59     ; out0             ;
+; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~60     ; |note_selector|Clk_divider:Gen_note|Counter:COUNTER|Add0~60     ; out0             ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun May 28 22:55:17 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off note_selector -c note_selector
+Info: Using vector source file "D:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab 1/xuan_tung_luu_30236798_Lab_1/sim/tone_organ/note_selector.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of note_selector.vwf called note_selector.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      72.36 %
+Info: Number of transitions in simulation is 9857814
+Info: Vector file note_selector.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 157 megabytes
+    Info: Processing ended: Sun May 28 22:55:48 2023
+    Info: Elapsed time: 00:00:31
+    Info: Total CPU time (on all processors): 00:00:16
+
+

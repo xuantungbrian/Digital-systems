@@ -1,0 +1,38 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile C:/Users/timol/Desktop/CPEN311Labs/Lab4/sim/shuffle/shuffle.mpf
+# Loading project shuffle
+# Compile of shuffle_tb.sv was successful.
+# Compile of shuffle.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.shuffle_tb
+# vsim -gui work.shuffle_tb 
+# Start time: 15:23:44 on Jun 17,2023
+# Loading sv_std.std
+# Loading work.shuffle_tb
+# Loading work.shuffle
+# ** Warning: (vsim-3017) C:/Users/timol/Desktop/CPEN311Labs/Lab4/sim/shuffle/shuffle_tb.sv(8): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /shuffle_tb/DUT File: C:/Users/timol/Desktop/CPEN311Labs/Lab4/rtl/shuffle.sv
+# ** Warning: (vsim-3015) C:/Users/timol/Desktop/CPEN311Labs/Lab4/sim/shuffle/shuffle_tb.sv(8): [PCDPC] - Port size (1) does not match connection size (8) for port 'reset_n'. The port definition is at: C:/Users/timol/Desktop/CPEN311Labs/Lab4/rtl/shuffle.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /shuffle_tb/DUT File: C:/Users/timol/Desktop/CPEN311Labs/Lab4/rtl/shuffle.sv
+# ** Warning: (vsim-3015) C:/Users/timol/Desktop/CPEN311Labs/Lab4/sim/shuffle/shuffle_tb.sv(8): [PCDPC] - Port size (8) does not match connection size (22) for port 'q'. The port definition is at: C:/Users/timol/Desktop/CPEN311Labs/Lab4/rtl/shuffle.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /shuffle_tb/DUT File: C:/Users/timol/Desktop/CPEN311Labs/Lab4/rtl/shuffle.sv
+# ** Warning: (vsim-3015) C:/Users/timol/Desktop/CPEN311Labs/Lab4/sim/shuffle/shuffle_tb.sv(8): [PCDPC] - Port size (24) does not match connection size (8) for port 'secret_key'. The port definition is at: C:/Users/timol/Desktop/CPEN311Labs/Lab4/rtl/shuffle.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /shuffle_tb/DUT File: C:/Users/timol/Desktop/CPEN311Labs/Lab4/rtl/shuffle.sv
+# ** Warning: (vsim-3015) C:/Users/timol/Desktop/CPEN311Labs/Lab4/sim/shuffle/shuffle_tb.sv(8): [PCDPC] - Port size (8) does not match connection size (1) for port 'address'. The port definition is at: C:/Users/timol/Desktop/CPEN311Labs/Lab4/rtl/shuffle.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /shuffle_tb/DUT File: C:/Users/timol/Desktop/CPEN311Labs/Lab4/rtl/shuffle.sv
+# ** Warning: (vsim-3722) C:/Users/timol/Desktop/CPEN311Labs/Lab4/sim/shuffle/shuffle_tb.sv(8): [TFMPC] - Missing connection for port 'wren'.
+add wave -position insertpoint  \
+sim:/shuffle_tb/SW \
+sim:/shuffle_tb/address \
+sim:/shuffle_tb/clk \
+sim:/shuffle_tb/data \
+sim:/shuffle_tb/finish \
+sim:/shuffle_tb/q \
+sim:/shuffle_tb/start \
+sim:/shuffle_tb/wren
+run -all
+# ** Note: $stop    : C:/Users/timol/Desktop/CPEN311Labs/Lab4/sim/shuffle/shuffle_tb.sv(25)
+#    Time: 225 ps  Iteration: 0  Instance: /shuffle_tb
+# Break in Module shuffle_tb at C:/Users/timol/Desktop/CPEN311Labs/Lab4/sim/shuffle/shuffle_tb.sv line 25
+# End time: 15:24:16 on Jun 17,2023, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 6

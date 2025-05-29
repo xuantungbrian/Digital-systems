@@ -1,0 +1,40 @@
+module fsm (input logic clk, flash_mem_waitrequest, flash_mem_readdatavalid, fsm_stim, stop,
+				output logic [3:0]   flash_mem_byteenable,
+				output logic flash_mem_read);
+				
+	logic [7:0] state;
+	parameter ZERO = {3'd0, 4'b0000, 1'b0};
+	parameter FIRST = {3'd1, 4'b0000, 1'b1};
+	parameter SECOND = {3'd2, 4'b0011, 1'b0};
+	parameter THIRD = {3'd3, 4'b0000, 1'b0};
+	parameter FOURTH = {3'd4, 4'b0000, 1'b0};
+	parameter FIFTH = {3'd5, 4'b0000, 1'b1};
+	parameter SIXTH = {3'd6, 4'b1100, 1'b0};
+	parameter SEVENTH = {3'd7, 4'b0000, 1'b0};
+	
+	assign flash_mem_byteenable[3:0] = state[4:1];
+	assign flash_mem_read = state[0];
+	
+	always_ff @(posedge clk, posedge stop) 
+		case (state)
+			ZERO: if (fsm_stim && !stop) state <= FIRST;
+					else state <= ZERO; 
+			FIRST: if (flash_mem_waitrequest) state <= FIRST;
+					else if (flash_mem_readdatavalid) state <= SECOND;
+					else state <= FIRST;
+			SECOND: if (flash_mem_waitrequest) state <= SECOND;
+						else if (!flash_mem_readdatavalid) state <= THIRD;
+						else state <= SECOND;
+			THIRD: state <= FOURTH;
+			FOURTH: if (fsm_stim && !stop) state <= FIFTH;
+						else state <= FOURTH; 
+			FIFTH: if (flash_mem_waitrequest) state <= FIFTH;
+					else if (flash_mem_readdatavalid) state <= SIXTH;
+					else state <= FIFTH;
+			SIXTH: if (flash_mem_waitrequest) state <= SIXTH;
+					else if (!flash_mem_readdatavalid) state <= SEVENTH;
+					else state <= SIXTH;
+			SEVENTH: state <= ZERO;
+			default: state <= ZERO;
+		endcase
+endmodule

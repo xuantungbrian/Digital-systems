@@ -1,0 +1,74 @@
+module main_fsm_tb();
+	logic clk, reset_n, invalid_ascii;
+	logic finish_init, finish_shuffle, finish_compute; 
+	logic start_init, start_shuffle, start_compute;
+	logic [9:0] LEDR;
+	logic [23:0] secret_key;
+
+	main_fsm DUT(
+		.clk(clk),
+		.reset_n(reset_n), 
+		.finish_compute(finish_compute), 
+		.finish_init(finish_init),
+		.finish_shuffle(finish_shuffle),
+		.invalid_ascii(invalid_ascii),
+		.start_init(start_init),
+		.start_shuffle(start_shuffle), 
+		.start_compute(start_compute),
+		.LEDR(LEDR),
+		.secret_key(secret_key));
+
+	initial begin
+		forever begin
+			clk = 0; #5;
+			clk = 1; #5;
+		end
+	end
+
+	initial begin
+		reset_n = 1;
+		invalid_ascii = 0;
+		finish_init = 0;
+		finish_shuffle = 0;
+		finish_compute = 0;
+		#10;
+		reset_n = 0;
+		#10;
+		reset_n = 1;
+		#20;
+		finish_init = 1;
+		#10;
+		finish_init = 0;
+		#20;
+		finish_shuffle = 1;
+		#10;
+		finish_shuffle = 0;
+		#20;
+		finish_compute = 1;
+		invalid_ascii = 1;
+		#10;
+		finish_compute = 0; 
+		#10
+		
+		reset_n = 1;
+		invalid_ascii = 0;
+		#10
+		reset_n = 0;
+		#10;
+		reset_n = 1;
+		#20;
+		finish_init = 1;
+		#10;
+		finish_init = 0;
+		#20;
+		finish_shuffle = 1;
+		#10;
+		finish_shuffle = 0;
+		#20;
+		finish_compute = 1;
+		invalid_ascii = 0;
+		#10;
+		finish_compute = 0; 
+		$stop;
+	end
+endmodule

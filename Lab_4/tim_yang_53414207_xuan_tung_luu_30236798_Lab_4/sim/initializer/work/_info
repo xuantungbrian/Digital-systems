@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_4/xuan_tung_luu_30236798_Lab_4/sim/swap
+vinitializer
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1687038285
+!i10b 1
+!s100 EJc:X@UiIGf_YHS>z`f<c1
+I5feN=MZF[Y<7DiIbMXc;`0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 initializer_sv_unit
+S1
+Z3 dD:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_4/xuan_tung_luu_30236798_Lab_4/sim/initializer
+w1686870679
+8D:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_4/xuan_tung_luu_30236798_Lab_4/rtl/initializer.sv
+FD:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_4/xuan_tung_luu_30236798_Lab_4/rtl/initializer.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1687038285.000000
+!s107 D:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_4/xuan_tung_luu_30236798_Lab_4/rtl/initializer.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_4/xuan_tung_luu_30236798_Lab_4/rtl/initializer.sv|
+!i113 1
+Z6 o-work work -sv
+Z7 tCvgOpt 0
+vinitializer_tb
+R0
+R1
+!i10b 1
+!s100 j<Jj^2TYk1o[i[9Jf7>ND2
+I?3zQd4Tm^E9f]<L_]c7^Q2
+R2
+!s105 initializer_tb_sv_unit
+S1
+R3
+w1687038280
+8D:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_4/xuan_tung_luu_30236798_Lab_4/sim/initializer/initializer_tb.sv
+FD:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_4/xuan_tung_luu_30236798_Lab_4/sim/initializer/initializer_tb.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_4/xuan_tung_luu_30236798_Lab_4/sim/initializer/initializer_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Study/UBC study materials/UBC Fourth Year - Summer Term/CPEN 311/Labs/Lab_4/xuan_tung_luu_30236798_Lab_4/sim/initializer/initializer_tb.sv|
+!i113 1
+R6
+R7

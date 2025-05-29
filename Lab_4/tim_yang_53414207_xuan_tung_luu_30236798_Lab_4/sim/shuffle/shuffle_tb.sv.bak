@@ -1,0 +1,27 @@
+module shuffle_tb();
+	logic start, clk;
+	logic [7:0] q;
+	logic [7:0] data, address;
+	logic finish, wren;
+	logic [9:0] SW;
+
+	shuffle DUT(start, clk, q, {12'b0, SW}, data, address, finish, wren);
+
+	initial begin
+		clk = 0; #5;
+		forever begin
+			clk = 1; #5;
+			clk = 0; #5;
+		end
+	end
+
+	initial begin
+		start = 1;
+		SW = 10'b1001001001;
+		q = 1;
+		#25;
+		start = 0;
+		#200;
+		$stop;
+	end
+endmodule
